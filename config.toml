@@ -1,4 +1,4 @@
-baseURL = "https://e-m-b-a.github.io/"
+baseURL = "https://e-m-b-a.github.io/public"
 languageCode = 'en-us'
 title = 'E-M-B-A The firmware scanning environment'
 theme="archie"
