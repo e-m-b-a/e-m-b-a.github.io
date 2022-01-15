@@ -13,8 +13,8 @@
       <pubDate>Sat, 15 Jan 2022 16:21:53 +0100</pubDate>
       
       <guid>https://e-m-b-a.github.io/posts/qnap_decryptor/</guid>
-      <description>On my last pentest of a QNAP storage I have seen that EMBA was not able to extract the firmware files. After some digging and research I found out that the firmware update files from the download site are encrypted. Binwalk for the rescue was able to give a hint on it:
-This was the good. The bad is, that binwalk was not able to extract the firmware. This means I started with some recon.</description>
+      <description>On my last pentest I had a QNAP storage firmware in front of me. And there I realised that EMBA was not able to extract the firmware files. After some digging and research I found out that the firmware update files from the download site are encrypted. Binwalk for the rescue was able to give a hint on it:
+This was the good. The bad is, that binwalk was not able to extract the firmware.</description>
     </item>
     
   </channel>
