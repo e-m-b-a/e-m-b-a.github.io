@@ -2,7 +2,7 @@
 title: "Qnap decryptor module"
 description: "EMBA got a new module for decrypting QNAP firmware files."
 date: 2022-01-15T16:21:53+01:00
-draft: true
+draft: false
 tags: extractor, encrypted, qnap
 ---
 
