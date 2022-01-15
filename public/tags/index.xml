@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on E-M-B-A The firmware scanning environment</title>
-    <link>https://e-m-b-a.github.io/tags/</link>
+    <link>https://e-m-b-a.github.io/public/tags/</link>
     <description>Recent content in Tags on E-M-B-A The firmware scanning environment</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://e-m-b-a.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://e-m-b-a.github.io/public/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test</title>
-      <link>https://e-m-b-a.github.io/tags/test/</link>
+      <link>https://e-m-b-a.github.io/public/tags/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://e-m-b-a.github.io/tags/test/</guid>
+      <guid>https://e-m-b-a.github.io/public/tags/test/</guid>
       <description></description>
     </item>
     
