@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on E-M-B-A The firmware scanning environment</title>
-    <link>https://e-m-b-a.github.io/public/categories/</link>
+    <link>https://e-m-b-a.github.io/categories/</link>
     <description>Recent content in Categories on E-M-B-A The firmware scanning environment</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://e-m-b-a.github.io/public/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://e-m-b-a.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
