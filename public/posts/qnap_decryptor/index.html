@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Qnap decryptor module - E-M-B-A The firmware scanning environment</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Qnap decryptor module - EMBARK BEYOND</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="EMBA got a new module for decrypting QNAP firmware files." />
 	<meta property="og:image" content=""/>
 	<meta property="og:title" content="Qnap decryptor module" />
@@ -26,13 +26,23 @@
 	
 	
 	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://e-m-b-a.github.io/css/style.4f72cad07aef85bcb17ea09439c0146f25986f95b20a86b6684cab6466134941.css">
+		
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="https://e-m-b-a.github.io/">E-M-B-A The firmware scanning environment</a>
+		<a href="https://e-m-b-a.github.io/">EMBARK BEYOND</a>
 	</div>
 	<nav>
+		
+		<a href="/posts/">Blog</a>
+		
+		<a href="/emba/">EMBA</a>
+		
+		<a href="/embark/">EMBArk</a>
 		
 		
 	</nav>
@@ -47,11 +57,11 @@
 		
 
 		<section class="body">
-			<p>On my last pentest I had a QNAP storage firmware in front of me. And there I realised that EMBA was not able to extract the firmware files. After some digging and research I found out that the firmware update files from the <a href="https://www.qnap.com/de-de/download?model=ts-453bu-rp&amp;category=firmware">download site</a> are encrypted. Binwalk for the rescue was able to give a hint on it:</p>
-<p><img src="/static/img/qnap-decrypt-binwalk.png" alt="QNAP_decrypt_binwalk"></p>
-<p>This was the good. The bad is, that binwalk was not able to extract the firmware. This means I started with some recon.
+			<p>On my last pentest I had a QNAP storage firmware in front of me. After starting EMBA with the default profile I realised that EMBA was not able to extract the needed firmware files. After some digging and research I found that the firmware update files from the <a href="https://www.qnap.com/de-de/download?model=ts-453bu-rp&amp;category=firmware">download site</a> are somehow encrypted. Additionally Binwalk was able to give a hint on it:</p>
+<p><img src="/img/qnap-decrypt-binwalk.png" alt="QNAP_decrypt_binwalk"></p>
+<p>This was the good. The bad is, that binwalk was not able to extract the firmware. This means we started with some recon.
 First I found the interesting project <a href="https://github.com/max-boehm/qnap-utils">qnap-utils</a> which should be able to unpack firmware images. In <a href="https://github.com/max-boehm/qnap-utils/issues/1">issue 1</a> the source code of a working version of the needed PC1 tool was linked. After compiling it on my current Kali linux machine I was able to extract a tgz file from the update image.</p>
-<p><img src="/static/img/qnap-decrypt.png" alt="QNAP_decrypt"></p>
+<p><img src="/img/qnap-decrypt.png" alt="QNAP_decrypt"></p>
 
 		</section>
 
@@ -63,7 +73,9 @@ First I found the interesting project <a href="https://github.com/max-boehm/qnap
 	</article>
 </main>
 <footer>
-<hr><a class="soc" href="https://github.com/e-m-b-a" title="GitHub"><i data-feather="github"></i></a>|<a class="soc" href="https://twitter.com/securefirmware/" title="Twitter"><i data-feather="twitter"></i></a>|</footer>
+<hr><a class="soc" href="https://github.com/e-m-b-a" title="GitHub"><i data-feather="github"></i></a>|<a class="soc" href="https://twitter.com/securefirmware/" title="Twitter"><i data-feather="twitter"></i></a>|⚡️
+	2022  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
 
 
 <script>
