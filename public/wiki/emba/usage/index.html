@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - EMBARK BEYOND</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Classic Before running EMBA make sure that you have installed all dependencies.
+Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f ." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="" />
+<meta property="og:description" content="Classic Before running EMBA make sure that you have installed all dependencies.
+Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://e-m-b-a.github.io/wiki/emba/usage/" /><meta property="article:section" content="wiki" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Classic Before running EMBA make sure that you have installed all dependencies.
+Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f ."/>
+<script src="https://e-m-b-a.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://e-m-b-a.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://e-m-b-a.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://e-m-b-a.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"   />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://e-m-b-a.github.io/css/style.4c4c01490232e84636149c6a9ba29d5b51b3876460ed06ba0ceda818787865b9.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<a class="main" href="https://e-m-b-a.github.io/"></a>
+	<nav>
+		
+		<a href="/posts/">Blog</a>
+		
+		<a href="/wiki/emba/">EMBA</a>
+		
+		<a href="/wiki/embark/">EMBArk</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title"></h1>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="classic">Classic</h2>
+<p>Before running <em>EMBA</em> make sure that you have <a href="https://github.com/e-m-b-a/emba/wiki/Installation#docker-installation">installed</a> all dependencies.</p>
+<h3 id="static-firmware-testing">Static firmware testing</h3>
+<ul>
+<li>Execute <em>EMBA</em> with set parameters, e.g.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">sudo ./emba.sh -l ./log -f ./firmware
+</code></pre></div></li>
+<li>Path for logs and firmware path are necessary for testing a firmware image.</li>
+<li>You can specify multiple <a href="https://github.com/e-m-b-a/emba/wiki/Usage#arguments">arguments</a>.</li>
+</ul>
+<h3 id="test-kernel-config">Test kernel config</h3>
+<ul>
+<li>Test only a kernel configuration with the kernel checker of <a href="https://github.com/slimm609/checksec.sh"><em>checksec</em></a>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config
+</code></pre></div></li>
+<li>If you add <code>-f ./firmware</code>, it will ignore <code>-k</code> and search for a kernel config inside the firmware</li>
+<li>You can specify some <a href="https://github.com/e-m-b-a/emba/wiki/Usage#arguments">arguments</a>.</li>
+</ul>
+<p><strong>Good to know:</strong></p>
+<ul>
+<li><code>sudo</code> is necessary for some modules to run properly, e.g. <code>S115_usermode_emulator.sh</code></li>
+<li>Currently only tested on <a href="https://kali.org/downloads"><em>Kali Linux</em></a> (2021.02)</li>
+<li><em>EMBA</em> needs quite a lot of free disk space for logging</li>
+<li><em>EMBA</em> currently supports the following architectures: MIPS, ARM, PPC, x86 and x64</li>
+</ul>
+<h2 id="docker">Docker</h2>
+<p>There is a simple <em>docker-compose</em> setup added, which allows you to run <em>EMBA</em> in a docker container.</p>
+<p>Run interactive docker container:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">FIRMWARE=/absolute/path/to/firmware LOG=/home/n/firmware_log/ docker-compose run emba
+</code></pre></div><p>This will drop you a shell in the folder where <em>EMBA</em> has been added. The firmware is located at <code>/firmware</code> and the log directory at <code>/log</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">./emba.sh -l /log -f /firmware -i
+</code></pre></div><p><em>EMBA</em> will do the work for you fully automatically:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">sudo ./emba.sh -l ./log -f /firmware
+</code></pre></div><ul>
+<li>You can specify some <a href="https://github.com/e-m-b-a/emba/wiki/Usage#arguments">arguments</a>.</li>
+</ul>
+<p>Limitations: <br>
+<del>- <em>CWE-Checker</em> and <em>FACT-extractor</em> are currently used as separate docker containers (see <a href="https://github.com/e-m-b-a/emba/issues/70)">https://github.com/e-m-b-a/emba/issues/70)</a></del></p>
+<ul>
+<li><em>CVE-Search</em> needs the database exposed by the host</li>
+</ul>
+<h2 id="arguments">Arguments</h2>
+<p>Print the possible command line options with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">./emba.sh -h
+</code></pre></div><pre tabindex="0"><code>Test firmware
+-a [MIPS]         Architecture of the linux firmware [MIPS, ARM, x86, x64, PPC]
+-A [MIPS]         Force Architecture of the linux firmware [MIPS, ARM, x86, x64, PPC] (disable architecture check)
+-l [./path]       Log path
+-f [./path]       Firmware path
+-e [./path]       Exclude paths from testing (multiple usage possible)
+-m [MODULE_NO.]   Test only with set modules [e.g. -m p05 -m s10 ... or -m p to run all p modules]
+                  (multiple usage possible, case insensitive, final modules aren't selectable, if firmware isn't a binary, the p modules won't run)
+-c                Enable cwe-checker
+-g                Create grep-able log file in [log_path]/fw_grep.log
+                  Schematic: MESSAGE_TYPE;MODULE_NUMBER;SUB_MODULE_NUMBER;MESSAGE
+-E                Enables automated qemu emulation tests (WARNING this module could harm your host!)
+-D                Developer mode - EMBA runs on the host without container protection
+-i                Ignores log path check
+-p [PROFILE]      Emba starts with a pre-defined profile (stored in ./scan-profiles)
+
+Web reporter
+-W                Activates web report creation in log path (overwrites -z)
+
+Dependency check
+-d                Only checks dependencies
+-F                Checks dependencies but ignore errors
+
+Special tests
+-k [./config]     Kernel config path
+-x                Enable deep extraction - try to extract every file two times with binwalk (WARNING: Uses a lot of disk space)
+-t                Activate multi threading (destroys regular console output)
+-o                Activate online checks (e.g. upload and test with VirusTotal)
+-r                Remove temporary firmware directory after testing
+
+Modify output
+-s                Prints only relative paths
+-z                Adds ANSI color codes to log
+-M                MATRIX mode (Warning: CPU intense)
+
+Firmware details
+-X [version]      Firmware version (double quote your input)
+-Y [vendor]       Firmware vendor (double quote your input)
+-Z [device]       Device (double quote your input)
+-N [notes]        Testing notes (double quote your input)
+
+Help
+-h                Prints this help message
+</code></pre><h2 id="live-systems-not-officially-supported">Live systems <em>(Not officially supported)</em></h2>
+<p>For testing a live system with <em>EMBA</em>, run it as if you were testing static firmware, but with <code>/</code> as firmware path:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">./emba.sh -l ./log -f /
+</code></pre></div><ul>
+<li>Path for logs and firmware path are necessary for <em>EMBA</em>.</li>
+<li>It improves output and performance, if you exclude docker with the <code>-e</code> switch:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">./emba.sh -l ./log -f / -e /var/lib/docker
+</code></pre></div></li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/e-m-b-a" title="GitHub"><i data-feather="github"></i></a>&nbsp;<a class="soc" href="https://twitter.com/securefirmware/" title="Twitter"><i data-feather="twitter"></i></a>&nbsp;
+<div class="tooltip"><a class="soc"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg></a>
+  <span class="tooltiptext">Build with Hugo & based on Archie Theme</span>
+</div>
+</footer>
+
+
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>

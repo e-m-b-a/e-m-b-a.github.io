@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EMBARK BEYOND</title>
-    <link>https://e-m-b-a.github.io/</link>
-    <description>Recent content on EMBARK BEYOND</description>
+    <title>Wikis on EMBARK BEYOND</title>
+    <link>https://e-m-b-a.github.io/wiki/</link>
+    <description>Recent content in Wikis on EMBARK BEYOND</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 16:21:53 +0100</lastBuildDate><atom:link href="https://e-m-b-a.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Qnap decryptor module</title>
-      <link>https://e-m-b-a.github.io/posts/qnap_decryptor/</link>
-      <pubDate>Sat, 15 Jan 2022 16:21:53 +0100</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/posts/qnap_decryptor/</guid>
-      <description>On my last pentest I had a QNAP storage firmware in front of me. After starting EMBA with the default profile I realised that EMBA was not able to extract the needed firmware files. After some digging and research I found that the firmware update files from the download site are somehow encrypted. Additionally Binwalk was able to give a hint on it:
-This was the good. The bad is, that binwalk was not able to extract the firmware.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://e-m-b-a.github.io/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://e-m-b-a.github.io/wiki/emba/os-support/</link>
@@ -139,16 +128,6 @@ embark</description>
       <guid>https://e-m-b-a.github.io/wiki/emba/</guid>
       <description>hello world
 see here emba wiki content</description>
-    </item>
-    
-    <item>
-      <title>Overview Wiki</title>
-      <link>https://e-m-b-a.github.io/wiki/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/</guid>
-      <description>hello world
-see here both wikis with their respective logos</description>
     </item>
     
   </channel>

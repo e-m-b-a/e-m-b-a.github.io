@@ -26,10 +26,10 @@ url = "https://twitter.com/securefirmware/"
 [[menu.main]]
   name = "EMBA"
   identifier = "emba"
-  url = "/emba/"
+  url = "/wiki/emba/"
   
 [[menu.main]]
   name = "EMBArk"
   identifier = "embark"
-  url = "/embark/"
+  url = "/wiki/embark/"
   
