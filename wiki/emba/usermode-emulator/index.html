@@ -1,26 +1,29 @@
 <!doctype html><html><head>
 <meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge"><title> - EMBARK BEYOND</title><meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
+<meta http-equiv=x-ua-compatible content="IE=edge"><title>Usermode-Emulator.md - EMBARK BEYOND</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Back to wiki menu
+Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
 Warning: EMBA needs root privileges for running in emulation mode.
-The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator. Afterwards the binary gets executed with the static compiled qemu emulator in tracing mode (--strace).">
+The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator.">
 <meta property="og:image" content>
-<meta property="og:title" content>
-<meta property="og:description" content="Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
+<meta property="og:title" content="Usermode-Emulator.md">
+<meta property="og:description" content="Back to wiki menu
+Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
 Warning: EMBA needs root privileges for running in emulation mode.
-The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator. Afterwards the binary gets executed with the static compiled qemu emulator in tracing mode (--strace).">
+The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://e-m-b-a.github.io/wiki/emba/usermode-emulator/"><meta property="article:section" content="wiki">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content>
-<meta name=twitter:description content="Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
+<meta name=twitter:title content="Usermode-Emulator.md">
+<meta name=twitter:description content="Back to wiki menu
+Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
 Warning: EMBA needs root privileges for running in emulation mode.
-The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator. Afterwards the binary gets executed with the static compiled qemu emulator in tracing mode (--strace).">
+The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator.">
 <script src=https://e-m-b-a.github.io/js/feather.min.js></script>
 <link href=https://e-m-b-a.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet>
 <link rel=stylesheet type=text/css media=screen href=https://e-m-b-a.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css>
 <link id=darkModeStyle rel=stylesheet type=text/css href=https://e-m-b-a.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css>
-<link rel=stylesheet type=text/css href=https://e-m-b-a.github.io/css/style.b49edceeedbcb03c821f7357d5ccc562d9faae79fbf02f3f37515404934130dd.css>
+<link rel=stylesheet type=text/css href=https://e-m-b-a.github.io/css/style.55d227f424e0cdf8a44473e08a9c67b8dc01e1d7a3cfb7bbc7fb28a40354c279.css>
 </head>
 <body>
 <div class=content><header>
@@ -34,9 +37,10 @@ The idea behind the emulator is to run the identified binaries with different co
 <main>
 <article>
 <div class=title>
-<h1 class=title></h1>
+<h1 class=title>Usermode-Emulator.md</h1>
 </div>
 <section class=body>
+<p><a href=https://e-m-b-a.github.io/wiki/emba/ title="wiki menu">Back to wiki menu</a></p>
 <p><strong>Warning:</strong> Currently this is an experimental module, and you need to activate it manually with the <em>-E</em> switch.</p>
 <p><strong>Warning:</strong> <em>EMBA</em> needs root privileges for running in emulation mode.</p>
 <p>The idea behind the emulator is to run the identified binaries with different command line options like <code>-V</code>, <code>-v</code>, <code>--version</code>, <code>--help</code> in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct <a href=https://www.qemu.org/><em>qemu</em></a> emulator. Afterwards the binary gets executed with the static compiled <em>qemu</em> emulator in tracing mode (<code>--strace</code>). If there are some files missing, they are searched through the firmware filesystem and copied to the missing location. If nothing is found, then an empty file is created.
@@ -63,6 +67,7 @@ On every emulation process, the identified root directory is shown with the foll
 </ul>
 <p><strong>Run <em>EMBA</em> with emulation mode activated:</strong></p>
 <p><code>sudo ./emba.sh -z -l ./logs_mips_router -f ../testimages/MIPS_router -E</code></p>
+<p><a href=https://e-m-b-a.github.io/wiki/emba/ title="wiki menu">Back to wiki menu</a></p>
 </section>
 <div class=post-tags>
 </div>

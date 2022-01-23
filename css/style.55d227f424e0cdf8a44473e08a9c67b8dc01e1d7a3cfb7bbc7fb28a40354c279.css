@@ -1,0 +1,84 @@
+:root {
+  --maincolor: #25063C;
+  --bordercl: #25063C;
+  --callouctcolor: dodgerblue;
+  --hovercolor: navy;
+  --darkMaincolor: #F6CD44;;
+}
+
+html, body, .content {
+  height: 100%;
+  background-color: #141415;
+}
+
+header {
+  height: 110px;
+  margin: 15px 0;
+  padding: 5px;
+  background-image: url(/emba.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 98px;
+}
+
+.main {
+  height: 100px;
+  width: 100px;
+  border: none;
+}
+
+.main:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+main {
+  min-height: calc(100% - 230px);
+}
+
+footer {
+  height: 50px;
+  margin: 15px 0;
+}
+
+hr {
+  border-top: 3px dotted #F6CD44;
+}
+
+.content {
+  margin-bottom: 0;
+  background-image: url(/header.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+footer svg {
+  min-height: none;
+}
+
+/*tooltip footer*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #F6CD44;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  right: 110%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+::-moz-selection { background: #25063C; color: #fff; }
+	::selection { background: #25063C; color: #fff; }
