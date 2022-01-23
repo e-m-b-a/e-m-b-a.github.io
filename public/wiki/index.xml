@@ -7,110 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://e-m-b-a.github.io/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/emba/os-support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/emba/os-support/</guid>
-      <description>EMBA is able to analyze different operating systems. The main focus is on Linux-based operating systems. Although EMBA is also able to identify and analyze the following operating systems:
- multiple Linux-based operating systems FreeBSD VxWorks FreeRTOS eCos yC/OS Adonis Siprotec (based on VxWorks) QNX and others  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/emba/referring-sites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/emba/referring-sites/</guid>
-      <description> https://www.kitploit.com/2021/01/emba-analyzer-for-linux-based-firmware.html https://securityonline.info/emba-analyzer-for-linux-based-firmware-of-embedded-devices/ https://cert.bournemouth.ac.uk/emba-an-analyzer-for-linux-based-firmware-of-embedded-devices/ https://p4cx.medium.com/emba-b370ce503602 https://www.libhunt.com/t/embedded-linux https://www.youtube.com/watch?v=8FeSpuRXvYA https://github.com/fkie-cad/awesome-embedded-and-iot-security https://project-awesome.org/fkie-cad/awesome-embedded-and-iot-security https://pythonawesome.com/embark-the-firmware-security-scanning-environment/ https://github.com/V33RU/IoTSecurity101#Pentesting-Firmwares-and-emulating-and-analyzing  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/emba/systemmode-emulator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/emba/systemmode-emulator/</guid>
-      <description>Warning: Currently this is an experimental module, and you need to activate it manually with the -Q switch. ~Additionally it is only supported in developer mode (-D switch).~
-Warning: EMBA needs root privileges for running in emulation mode.
-Idea and history Starting with this Pull request EMBA got basic integration of the great firmadyne framework.
-Firmware running in system mode emulation The following firmware images are tested in EMBA with full system emulation.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/emba/usage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/emba/usage/</guid>
-      <description>Classic Before running EMBA make sure that you have installed all dependencies.
-Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/emba/usermode-emulator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/emba/usermode-emulator/</guid>
-      <description>Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
-Warning: EMBA needs root privileges for running in emulation mode.
-The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator. Afterwards the binary gets executed with the static compiled qemu emulator in tracing mode (--strace).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/embark/os-support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/embark/os-support/</guid>
-      <description>EMBA is able to analyze different operating systems. The main focus is on Linux-based operating systems. Although EMBA is also able to identify and analyze the following operating systems:
- multiple Linux-based operating systems FreeBSD VxWorks FreeRTOS eCos yC/OS Adonis Siprotec (based on VxWorks) QNX and others  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/embark/referring-sites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/embark/referring-sites/</guid>
-      <description> https://www.kitploit.com/2021/01/emba-analyzer-for-linux-based-firmware.html https://securityonline.info/emba-analyzer-for-linux-based-firmware-of-embedded-devices/ https://cert.bournemouth.ac.uk/emba-an-analyzer-for-linux-based-firmware-of-embedded-devices/ https://p4cx.medium.com/emba-b370ce503602 https://www.libhunt.com/t/embedded-linux https://www.youtube.com/watch?v=8FeSpuRXvYA https://github.com/fkie-cad/awesome-embedded-and-iot-security https://project-awesome.org/fkie-cad/awesome-embedded-and-iot-security https://pythonawesome.com/embark-the-firmware-security-scanning-environment/ https://github.com/V33RU/IoTSecurity101#Pentesting-Firmwares-and-emulating-and-analyzing  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/embark/systemmode-emulator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/embark/systemmode-emulator/</guid>
-      <description>Warning: Currently this is an experimental module, and you need to activate it manually with the -Q switch. ~Additionally it is only supported in developer mode (-D switch).~
-Warning: EMBA needs root privileges for running in emulation mode.
-Idea and history Starting with this Pull request EMBA got basic integration of the great firmadyne framework.
-Firmware running in system mode emulation The following firmware images are tested in EMBA with full system emulation.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/embark/usage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/embark/usage/</guid>
-      <description>Classic Before running EMBA make sure that you have installed all dependencies.
-Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://e-m-b-a.github.io/wiki/embark/usermode-emulator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/wiki/embark/usermode-emulator/</guid>
-      <description>Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
-Warning: EMBA needs root privileges for running in emulation mode.
-The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator. Afterwards the binary gets executed with the static compiled qemu emulator in tracing mode (--strace).</description>
-    </item>
-    
-    <item>
       <title>EMBArk wiki content</title>
       <link>https://e-m-b-a.github.io/wiki/embark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -128,6 +24,365 @@ embark</description>
       <guid>https://e-m-b-a.github.io/wiki/emba/</guid>
       <description>hello world
 see here emba wiki content</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/aggregator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/aggregator/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ The aggregator is part of the finishing modules within EMBA. After the firmware testing process is finished, the aggregator collects all relevant data, extracts version details, and compiles vulnerability data (CVE) and possible exploits. Additionally, it shows all relevant information in a nice and shiny report.
+Some impressions of the aggregator:
+[[images/f19_cve_aggregator.png]] [[images/f50_base_aggregator1.png]] [[images/f50_base_aggregator2.png]]</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/development/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Structure of EMBA . ├── config/ ├── documentation/ ├── helpers/ ├── modules/ ├── scan-profiles/ ├── Dockerfile ├── README.md ├── check_project.sh ├── docker-compose.yml ├── Dockerfile ├── emba.sh └── installer.sh config/ Configuration files for different modules with file names, regular expressions or paths. These files are very handy, easy to use and they also keep the modules clean.
+helpers/ Some scripts with basic functions for EMBA, e.g. colored and uniform output on the console or the creation of log files.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/faq/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Q: After downloading EMBA nothing works if I try to start it. A: First, run the installer (sudo ./installer.sh). Usually you are going to start with a default installation: sudo ./installer.sh -d
+ Q: Do I need administrative privileges to run EMBA? A: Yes.
+ Q: Should I really use the emulation mode of EMBA? A: As it gives awesome results you should give it a try. But keep in mind you are executing code on your machine and your complete environment could get compromised quite easy with it.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/feature-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/feature-overview/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ It&amp;rsquo;s quite difficult to summarize all the features of EMBA, simply because there are too many of them. Therefore, all modules (which are the core of EMBA) will be listed in the correct order of execution and briefly described. All external tools that EMBA uses are linked to their source.
+Pre-modules: These will be loaded and called before everything else, but only if the provided firmware is a file (if it is a directory, EMBA assumes the firmware is already extracted and starts with the core modules, which are listed below).</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/home/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Welcome to the wiki of EMBA To find out more about the individual functions of EMBA, installation instructions or user instructions, use the wiki menu on this page. If you still have questions, then open an issue with the label Question.
+Motivation There is a wide variety of software available that can analyze Linux firmware, however none of them could fulfill our expectations. Therefore, we combined the best tools into one simple application.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/installation/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ We strongly recommend that you run EMBA inside a virtual machine and use the default docker mode. WARNING: Do not use EMBA in developer mode (-D) as it will execute code (e.g. s115 module) and harm your host system!
+EMBA can be executed in two ways, the classic and developer mode. In the classic variant, EMBA and all modules are executed inside the docker container. The developer mode is typically used during developing tasks and should not be used on regular basis.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/os-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/os-support/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ EMBA is able to analyze different operating systems. The main focus is on Linux-based operating systems. Although EMBA is also able to identify and analyze the following operating systems:
+ multiple Linux-based operating systems FreeBSD VxWorks FreeRTOS eCos yC/OS Adonis Siprotec (based on VxWorks) QNX and others  </description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/referring-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/referring-sites/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/  https://www.kitploit.com/2021/01/emba-analyzer-for-linux-based-firmware.html https://securityonline.info/emba-analyzer-for-linux-based-firmware-of-embedded-devices/ https://cert.bournemouth.ac.uk/emba-an-analyzer-for-linux-based-firmware-of-embedded-devices/ https://p4cx.medium.com/emba-b370ce503602 https://www.libhunt.com/t/embedded-linux https://www.youtube.com/watch?v=8FeSpuRXvYA https://github.com/fkie-cad/awesome-embedded-and-iot-security https://project-awesome.org/fkie-cad/awesome-embedded-and-iot-security https://pythonawesome.com/embark-the-firmware-security-scanning-environment/ https://github.com/V33RU/IoTSecurity101#Pentesting-Firmwares-and-emulating-and-analyzing  </description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/systemmode-emulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/systemmode-emulator/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Warning: Currently this is an experimental module, and you need to activate it manually with the -Q switch. ~Additionally it is only supported in developer mode (-D switch).~
+Warning: EMBA needs root privileges for running in emulation mode.
+Idea and history Starting with this Pull request EMBA got basic integration of the great firmadyne framework.
+Firmware running in system mode emulation The following firmware images are tested in EMBA with full system emulation.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/usage/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Classic Before running EMBA make sure that you have installed all dependencies.
+Static firmware testing  Execute EMBA with set parameters, e.g. sudo ./emba.sh -l ./log -f ./firmware  Path for logs and firmware path are necessary for testing a firmware image. You can specify multiple arguments.  Test kernel config  Test only a kernel configuration with the kernel checker of checksec: sudo ./emba.sh -l ./logs/kernel_conf -k ./kernel.config  If you add -f .</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/usermode-emulator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/usermode-emulator/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ Warning: Currently this is an experimental module, and you need to activate it manually with the -E switch.
+Warning: EMBA needs root privileges for running in emulation mode.
+The idea behind the emulator is to run the identified binaries with different command line options like -V, -v, --version, --help in a simple chroot environment. After the identification of the binary architecture, it is possible to choose the correct qemu emulator.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/emba/web-report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/emba/web-report/</guid>
+      <description>https://e-m-b-a.github.io/wiki/emba/ To get the HTML-based web report at the end of a testing process with EMBA, the parameter -W needs to be used. It will generate the complete HTML report in the log sub-folder html-report. You can share and copy the html-report directory, all necessary files for the report are included.
+Usage: [[images/report_usage.jpg]]
+You can use the web report without JavaScript enabled, but then you will not be able to resize the menu, use the buttons to scroll all the way up / down and use your arrow keys to move between pages.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/admin/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Admin The admin-pages will support deleting, editing etc of Firmware-scans.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/amos-project-archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/amos-project-archive/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Here are all the Pdfs from Kickoff PDF1 PDF1
+PDF2 PDF2
+PDF3 PDF3
+PDF4 PDF4</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/build-embark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/build-embark/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Initial Setup    Clone EMBArk github repository i.e git clone git@github.com:e-m-b-a/embark.git
+  Change directory to root of the repository i.e embark
+  apt-packages:
+ git docker.io docker-compose python3 python3-django python3-pip python3-dev default-libmysqlclient-dev build-essential pipenv npm pycodestyle python3-pylint-django    pip-packages:
+ Django = &amp;ldquo;&amp;gt;=4.0.1&amp;rdquo; channels channels-redis daphne (Or other asgi-mod) mysqlclient django-apscheduler mod-wsgi-standalone (Or other apache uwgi-mod) django-dotenv Rx inotify-simple psutil msgpack django pycodestyle djlint pylint-django    define Runtime variables (rec in .</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/choice_enum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/choice_enum/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ CoiceINTenum class child of INTenum used for users and Role-class</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/dev-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/dev-mode/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ 4Devs We have a BLOG
+Important  !! Early Alpha-Stage !! Testing Firmware in Expert-Mode -&amp;gt; Dev-mode is risky All communication Ports are exposed onto/on the host IF EMBA runs in Dev-mode !! always run ./dev-tools/check-project.sh before committing !! Currently we run the Django-Server on the host without docker, since thats the easiest way to fully support EMBA.  How-to   Install and Setup everything for Django to run:</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/development/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/  Overview Technical Dev-mode Internals Testing  </description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/django-uploader-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/django-uploader-app/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ in-Short: This App provides the main-functionality. As in EMBA. Firmware is defined as a Datatype(Class), Uploaded, Stored, Analyzed by EMBA(Boundedexecuter.py) and the Results send to the backend.
+Boundedexecuter.py: defines a class for pooling and execution of the command required to execute ./emba.sh and get results back Uses Shell-call in subprocess(root)
+archiver.py handels achive files like .gz
+models.py defines the firmware for analysis and the input forms that are used to define emba-flags outputs emba-command flags that are used by boundedexecutor</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/django-users-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/django-users-app/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ in-Short: This App provides the user-roles and handels storage in the backend.
+models.py defines the user-roles
+Unit-tests: TODO tests app functionality</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/emba_in_embark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/emba_in_embark/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ APP Emba is the main Application in Embark and is mounted and addressed via /app/emba which right now is just a symlink to ./emba
+CVE The cve db is installed on HOST directly via embas installer. It is used by emba via shared volume, namely external/cve_search. The lookup takes place via search.py.
+EMBA emba with its dependencies is installed on host in root-dir
+AND
+is run as docker-container started by embark.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/embark-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/embark-architecture/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Dev-mode  TODO
+Deploy  UML TODO</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/embark-internals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/embark-internals/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Technical Documentation Modules Django apps embark folder in the root repo houses the django application
+uploader This app is responsible for uploading firmwares, running emba commands and saving results and metadata into SQL database
+models.py uploader app has following models
+ FirmwareFile: Stores path of firmware file on disk. Firmware: This is an instance of emba run command. It has a linked FirmwareFile and corresponding flags for that emba run command.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/faq/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Q: Is EMBArk more powerful compared to EMBA? A: EMBArk and EMBA are a team. EMBA is the backend (doing the firmware testing) and EMBArk is the intelligent and beautiful enterprise frontend.
+ Q: Is there a timeline for the first stable release? A: Nope.
+ Q: I found a bug in EMBArk. How can I report it? A: Great. Fix it and open a pull request or open an issue here.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/feature-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/feature-overview/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/  High quality firmware analysis process (based on the EMBA firmware scanner) Firmware upload and scan configuration via Web Interface Aggregate Results and Dashboard Security overview per firmware Full EMBA report access Easy installation OpenSource license  </description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/home/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Welcome to the EMBArk wiki! To find out more about the individual functions of EMBArk, installation instructions or user instructions, use the wiki menu on this page. If you still have questions, then open an issue with the label Question.
+Motivation There is a wide variety of software available that can analyze Linux firmware, however none of them could fulfill our expectations. Therefore, we combined the best tools into one simple application.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/installation/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ We strongly recommend that you run EMBArk inside a virtual machine, because this software is in alpha state and we cannot guarantee that EMBArk will not fail or causes loss of data or other malfunctions on your system.
+Prerequisites EMBArk is using EMBA with a lot of other tools in the background. The needed system resources depend on the firmware you are going to analyse. Usually EMBArk runs quite smooth in the following environment:</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/os-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/os-support/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ EMBArk is able to analyze different operating systems. The main focus is on Linux-based operating systems. Although EMBArk is also able to analyze the following operating systems:
+ multiple Linux-based operating systems FreeBSD VxWorks FreeRTOS eCos yC/OS Adonis Siprotec (based on VxWorks) and others  </description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/overview/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Embark: This is the name of the webserver that was build with the Django-Framework
+Django: MTV = model - template - views . The main idea behind django.
+Make a model for your data - build a template for how the data is being presented to the user - define views for requests
+Development EMBArk is currently in a pre-release state.
+More info  for Contributors.
+Emba Emba provides the main functionalities for the Firmware-analyzing process.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/technical_documentation-old/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/technical_documentation-old/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Technical Documentation Modules views.py Central file to accept and propagate all requests from clients. Those include:
+ upload firmware: User either drag and drops file or selects it by hand. For further information see (### file uploading)
+It is passed as FirmwareFile attached to the request which is stored as model in the database and saved packed on the server machine. analyse firmware: User fills django form which is send togehter with the request.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/testing/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Testing-Guide For every Pull-Request that warrants comprehensive tests of EMBArks functionality. (exempt may be bug_fixes or changes to files, that not contribute to the Servers function) every reviewer/contributor is to follow the following checklist.
+Since there are 3 setup-options, it is important to check fist which options are subject of the PR and follow the according list below.
+Default These Steps are ALWAYS necessary, since they check the main user-interface</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/upload/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Uploadsite expertmode-options they are switched on and off via value (_on/_off)of the classes to be precise in static/scripts/main.js expertModeOn() and helpTextOn()</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/user-documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/user-documentation/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Authentication First Before accessing EMBArk you need to register yourself with username and password: Second Now you may login and start your research Navigation The navigation is done via the left sidebar, featuring logout at the bottom. The following sites are currently available:
+ main dashboard aggregating the collected data upload/analyze page upload and start analysis process on firmware service dashboard current progress overview report dashboard listing detailed information about analysed firmware  Main Dashboard Compressed and aggregated data for overview and performance done by EMBA.</description>
+    </item>
+    
+    <item>
+      <title>Overview emba Wiki</title>
+      <link>https://e-m-b-a.github.io/wiki/embark/web-interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://e-m-b-a.github.io/wiki/embark/web-interface/</guid>
+      <description>https://e-m-b-a.github.io/wiki/embark/ Main dashboard Firmware upload Firmware scan configuration Firmware scan status Report overview Firmware detail report </description>
     </item>
     
   </channel>

@@ -1,3 +1,11 @@
+---
+title: Usermode-Emulator.md
+draft: false
+---
+
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
+
 **Warning:** Currently this is an experimental module, and you need to activate it manually with the _-E_ switch.
 
 **Warning:** *EMBA* needs root privileges for running in emulation mode.
@@ -37,4 +45,8 @@ With the version detection strings from `config/bin_version_strings.cfg`, it is 
 `sudo ./emba.sh -z -l ./logs_mips_router -f ../testimages/MIPS_router -E`
 
 
+
+
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
 

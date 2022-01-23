@@ -1,3 +1,11 @@
+---
+title: Usage.md
+draft: false
+---
+
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
+
 ## Classic
 
 Before running *EMBA* make sure that you have [installed](https://github.com/e-m-b-a/emba/wiki/Installation#docker-installation) all dependencies.
@@ -112,3 +120,6 @@ For testing a live system with *EMBA*, run it as if you were testing static firm
   ```console
   ./emba.sh -l ./log -f / -e /var/lib/docker
   ```
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
+

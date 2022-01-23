@@ -1,3 +1,11 @@
+---
+title: Systemmode-Emulator.md
+draft: false
+---
+
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
+
 **Warning:** Currently this is an experimental module, and you need to activate it manually with the _-Q_ switch. ~Additionally it is only supported in developer mode (_-D_ switch).~
 
 **Warning:** *EMBA* needs root privileges for running in emulation mode.
@@ -33,3 +41,7 @@ The following firmware images are tested in EMBA with full system emulation. The
 * DAP-1353 v3.15
 * DAP-2553 v1.31
 * DAP-3520 v1.16
+
+
+[Back to wiki menu]({{< ref "/wiki/emba" >}} "wiki menu")
+
