@@ -4,7 +4,7 @@ description: "EMBA got a new module for decrypting and extracting QNAP firmware 
 authors:
   - Michael Messner
 date: 2022-01-23T15:21:53+01:00
-draft: false
+draft: true
 tags:
   - extractor
   - encrypted
