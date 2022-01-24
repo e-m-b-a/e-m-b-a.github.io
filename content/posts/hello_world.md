@@ -9,7 +9,7 @@ tags:
   - EMBA
 ---
 
-Here we are with a brand new blog around EMBA and EMBArk the firmware scanning environment.
+Here is the EMBA team with a brand new blog around EMBA and EMBArk the firmware scanning environment.
 
 In the near future you will find some blog posts on things we are working on and firmware security scanning in general. For now enjoy the EMBA video.
 
