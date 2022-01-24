@@ -21,15 +21,15 @@ An entropy value of straight 1 typically means it is compressed or encrypted. Af
 
 ![QNAP_decrypt_binwalk](/img/qnap-decrypt-binwalk.png)
 
-This was the good. The bad was, that binwalk was not able to extract the firmware. Thehis means we had to start with some recon work.
-First, we found the interesting project [qnap-utils](https://github.com/max-boehm/qnap-utils) which should be able to decrypt QNAP firmware images. In [issue 1](https://github.com/max-boehm/qnap-utils/issues/1) the source code of a working version of the needed _PC1_ tool was linked. After compiling it on a current Kali Linux machine we were able to extract a _tgz_ archive from the update image.
+This was good. The bad was, that binwalk was not able to extract the firmware. This means we had to start with some recon work.
+We found the interesting project [qnap-utils](https://github.com/max-boehm/qnap-utils) which should be able to decrypt QNAP firmware images. In [issue 1](https://github.com/max-boehm/qnap-utils/issues/1) the source code of a working version of the needed _PC1_ tool was linked. After compiling it on a current Kali Linux machine we were able to extract a _tgz_ archive from the update image.
 
 ![QNAP_decrypt](/img/qnap-decrypt.png)
 
 We wrote a quick [EMBA module](https://github.com/m-1-k-3/emba/blob/1ab85357c2960b7ae449df3ee114995c09995a10/modules/P18_qnap_decryptor.sh) for the decryption and everything should be good to go.
-We designed it in a way to identify the QNAP encrypted firmware via binwalk and place the PC1 binary for decryption to the _./external_ folder. On a user installation this is done by the EMBA installer and so the module just needs to execute this binary with the correct set of parameters.
+We designed it in a way to identify the QNAP encrypted firmware via binwalk and placed the PC1 binary for decryption to the _./external_ folder. On a user installation this is done by the EMBA installer and so the module just needs to execute this binary with the correct set of parameters.
 
-After updating our docker container we were ready for the first run. The firmware got decrypted and during the deep-extraction a lot of filesystem areas where extracted. As EMBA is doing a lot of tests on a firmware our first scan took quite a while. After finishing the testing EMBA has identified around 50 identified software components with version details and a lot of other interesting stuff like the used binary protections and weak binary functions.
+After updating our docker container we were ready for the first run. The firmware got decrypted and during the deep-extraction a lot of filesystem areas where extracted. As EMBA is doing a lot of tests on a firmware our first scan took quite a while. After finishing the testing EMBA has identified around 50 software components with version details and a lot of other interesting stuff like the used binary protections and weak binary functions.
 
 ![QNAP_binary_functions](/img/qnap-binary-fct.png)
 
