@@ -27,15 +27,6 @@ We found the interesting project [qnap-utils](https://github.com/max-boehm/qnap-
 ![QNAP_decrypt](/img/qnap-decrypt.png)
 
 We wrote a quick [EMBA module](https://github.com/m-1-k-3/emba/blob/1ab85357c2960b7ae449df3ee114995c09995a10/modules/P18_qnap_decryptor.sh) for the decryption and everything should be good to go.
-We designed it in a way to identify the QNAP encrypted firmware via binwalk and placed the PC1 binary for decryption to the _./external_ folder. On a user installation this is done by the EMBA installer and so the module just needs to execute this binary with the correct set of parameters.
-
-After updating our docker container we were ready for the first run. The firmware got decrypted and during the deep-extraction a lot of filesystem areas where extracted. As EMBA is doing a lot of tests on a firmware our first scan took quite a while. After finishing the testing EMBA has identified around 50 software components with version details and a lot of other interesting stuff like the used binary protections and weak binary functions.
-
-![QNAP_binary_functions](/img/qnap-binary-fct.png)
-
-During our deep investigation of the results, we realized that most of these results were based on our [static analysis module - s09](https://github.com/e-m-b-a/emba/blob/master/modules/S09_firmware_base_version_check.sh). This also means that the very powerful version detection via dynamic analysis was mostly failing.
-With this in mind our investigation on how to improve the results started.
-First issue we identified during checking the project [qnap-utils](https://github.com/max-boehm/qnap-utils) was that the extracted filesystem we generated with our deep-extraction mode was there but it was very messy. This was not a problem for all the static analysis mechanisms, but for dynamic analysis with qemu it was a blocker (at this time). To get a better filesystem we ported the code from the [extract_qnap_fw.sh script]( https://github.com/max-boehm/qnap-utils/blob/master/extract_qnap_fw.sh) and implemented it into the QNAP decryption module as [additional extractor]( https://github.com/m-1-k-3/emba/blob/186fc6d6b7c1915ca2f89b3190ec20a6f3525461/modules/P18_qnap_decryptor.sh) for QNAP firmware. As the original code was a bash script it was quite easy to port it to EMBA and do some cleanup to make it shellcheck compatible. 
 We designed it in a way to identify the QNAP encrypted firmware via Binwalk. With the _-y_ parameter Binwalk supports checking only specific signatures. In our case we run Binwalk with the "qnap encrypted" signature in the P02 module for the identification:
 
 _binwalk -y "qnap encrypted" "$CHECK_FILE"_
