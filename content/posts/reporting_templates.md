@@ -10,9 +10,9 @@ tags:
   - reporting
 ---
 
-We have included a template mechanism for better and customised reporting in EMBA. Now it is possible to place plain text files or shell scripts to _./report_templates_.
-The files need to be named properly. This means for the module _P11_dlink_SHRS_enc_extract.sh_ a reporting template with the name _P11_dlink_SHRS_enc_extract-post.sh_ or _P11_dlink_SHRS_enc_extract-post.txt_ is used. The ending _-pre_ is used for details at the beginning of the module, _-post_ is for the end of the module.
-The text file is just echoed to the cli and to the report file via the command _cat_. If a shell script is found, this gets included via _source_. With this mechanism you are able to use the full power of shell scripting in your reporting template.
+We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory _./report_templates_.
+The naming of the files is quite strict. This means for the module _P11_dlink_SHRS_enc_extract.sh_ a reporting template with the name _P11_dlink_SHRS_enc_extract-post.sh_ or _P11_dlink_SHRS_enc_extract-post.txt_ is used. The ending _-pre_ is used for details printed at the beginning of the module, _-post_ includes details shown at the end of the module.
+If a text file is used, this is just echoed to the cli and to the report file via the command _cat_. If instead a shell script is found, this gets included via _source_ command. With this mechanism you are able to use the full power of shell scripting in your reporting templates. Means also you can access all variables and print your own customised header/footer of the modules.
 
 ![EMBA reporting template used](/img/emba_post-reporting.png)
 
@@ -40,4 +40,6 @@ report_templates
 
 The pre reporting templates are handled via the EMBA helper function _pre_module_reporter_ and the post reporting templates are handled via the already available helper function _module_end_log_.
 
-The templates currently included in the installation are primarly for showing the possibilities of this new feature. As usual [pull requests](https://github.com/e-m-b-a/emba/pulls) are welcome.
+The templates currently included in the installation are primarly for showing the possibilities of this new feature. We believe this is a great feature for every pentester to include the own descriptions into the EMBA reports.
+
+Additionally, we will improve the included templates over time. If you are interested in helping improving these templates [pull requests](https://github.com/e-m-b-a/emba/pulls) are welcome.
