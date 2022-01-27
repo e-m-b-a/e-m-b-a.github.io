@@ -1,7 +1,7 @@
 ---
 title: "Reporting improvements for EMBA"
-date: 2022-01-26T10:42:00+01:00
-draft: true
+date: 2022-01-27T10:04:00+01:00
+draft: false
 author:
   - Michael Messner
 tags:
