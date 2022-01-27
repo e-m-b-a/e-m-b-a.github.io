@@ -24,13 +24,13 @@ url = "https://twitter.com/securefirmware/"
   identifier = "posts"
   url = "/posts/"
   
-[[menu.main]]
-  name = "EMBA"
-  identifier = "emba"
-  url = "/wiki/emba/"
+#[[menu.main]]
+#  name = "EMBA"
+#  identifier = "emba"
+#  url = "/wiki/emba/"
   
-[[menu.main]]
-  name = "EMBArk"
-  identifier = "embark"
-  url = "/wiki/embark/"
+#[[menu.main]]
+#  name = "EMBArk"
+#  identifier = "embark"
+#  url = "/wiki/embark/"
   
