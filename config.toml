@@ -1,4 +1,4 @@
-baseURL = "https://www.securefirmware.de"
+baseURL = "https://www.securefirmware.de/"
 languageCode = 'en-us'
 title = 'EMBA BEYOND'
 theme="archie"
