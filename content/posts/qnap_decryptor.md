@@ -3,8 +3,8 @@ title: "QNAP firmware extractor module - from 0 to full firmware analysis"
 description: "EMBA got a new module for decrypting and extracting QNAP firmware files."
 authors:
   - Michael Messner
-date: 2022-01-24T15:21:53+01:00
-draft: true
+date: 2022-02-08T09:50:53+01:00
+draft: false
 tags:
   - extractor
   - encrypted
@@ -46,5 +46,3 @@ After all these modifications EMBA was finally able to identify 94 software comp
 
 ![QNAP_software_components](/img/qnap-components.png)
 
-# Final note:
-There are multiple vendors trying to protect their firmware via encryption. On the one hand this makes sense from a vendor perspective as long as the key material is not leaked. On the other hand vulnerability identification gets harder for researchers and so these vulnerabilities are not getting addressed. Beside the encrypted firmware from QNAP EMBA currently supports extracting [EnGenius](https://github.com/e-m-b-a/emba/blob/master/modules/P16_EnGenius_decryptor.sh) firmware as well as some [D'Link](https://github.com/e-m-b-a/emba/blob/master/modules/P11_dlink_SHRS_enc_extract.sh) firmware. Additionally we include other techniques for extracting firmware that Binwalk is currently not able to handle. GPG compressed firmware, used for example by Linksys/Belkin, is one such example.
