@@ -14,7 +14,7 @@ tags:
 ![Black Hat Asia 2022 logo](/img/bh-asia_2022_02.png#center)
 
 
-It’s official, in May [Pascal](https://twitter.com/_p4x) and [myself](https://twitter.com/s3cur1ty_de) will present the EMBA firmware security scanner at Black Hat ASIA 2022
+It’s official, in May [Pascal](https://twitter.com/_p4x) and [myself](https://twitter.com/s3cur1ty_de) will present EMBA the firmware security scanner at Black Hat ASIA 2022.
 We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage!
 
 ![Black Hat Asia 2022 - EMBA](/img/bh-asia_2022_01.png)
