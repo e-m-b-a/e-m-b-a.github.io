@@ -10,11 +10,11 @@ tags:
   - EMBA
 ---
 
-`Dlink` network devices, especially routers are an fairly common sight, which have a history of static encryption algorithms.
-So we wanted to expand EMBAs decryption capabilities to include devices like the DIR-X1560, DIR-X5460, DIR-X4860, etc.
+***`Dlink` network devices, especially routers are an fairly common sight, which have a history of static encryption algorithms.
+So we wanted to expand EMBAs decryption capabilities to include devices like the DIR-X1560, DIR-X5460, DIR-X4860, etc.***
 
 
-The Goal:
+Goal:
 ---
 Find and reproduce the decryption algorithm used in DLink-Firmware with the Header `encrypted_img` followed by the firmware size.
 
@@ -22,7 +22,7 @@ Idea:
 ---
 Buy a cheap DLink-router that uses that specific firmware encryption and revers engineer the encryption by obtaining a decrypted firmware-image/root-filesystem.
 
-The Process:
+Process:
 ---
 1.	Disassembly (HW):
 
@@ -68,4 +68,3 @@ The Process:
     After understanding the whole process from encrypted binary to decrypted flash-image, which decrypts the binary in 128kiB blocks and removes header and some trailing bytes.
     Following along step by step produces a UBI file and EMBA then extracts and analyzes its contents.
     
-
