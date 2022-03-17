@@ -16,7 +16,7 @@ tags:
 
 After around 1 and a half year of continuous development (and 1500 commits) we have decided to create our first official EMBA release.
 
-*Welcome [EMBA v0.0.9 - Munich Edt.](https://github.com/e-m-b-a/emba/releases)*
+*Welcome [EMBA v0.9.0 - Munich Edt.](https://github.com/e-m-b-a/emba/releases)*
 
 Let's celebrate our initial release!
 
