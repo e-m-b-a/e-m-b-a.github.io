@@ -28,13 +28,16 @@ Process:
 
     In the search of a “hidden” (not externally accessible) interface or to directly access the nand-flash.
 
-    **PICS #TODO**
+    ![opening](/img/dlink_enc_img/IMG_0241.jpg)
 
     And that looks like a UART Interface.
+    ![theuart](/img/dlink_enc_img/IMG_0242.png)
 
 2.	UART identification:
 
     There are different ways to identify the Pin-layout of unlabeled UART-Interface, tools like JTAGulator or manually. But when GND and the Voltage-level is identified correctly, baudrate and rx/tx pins, can - if in question - just be found by trial and error.
+
+    ![setup](/img/dlink_enc_img/IMG_0249.jpg)
 
 3.	Where to get the root-fs:
 
@@ -47,6 +50,9 @@ Process:
 4.	Flash-dump:
 
     One easy way to readout Flash-memory is via  [bcm-cfedump](https://github.com/Depau/bcm-cfedump), which uses the cfe-bootloader's dump command and saves the ASCII-hex data back into a binary file.
+
+    ![flashdump](/img/dlink_enc_img/flash-dump.png)
+    ![flash](/img/dlink_enc_img/IMG_0250.jpg)
     
 5.	Flash-content analysis:
 
