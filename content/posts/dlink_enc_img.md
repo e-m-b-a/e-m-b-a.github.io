@@ -71,6 +71,6 @@ Process:
 
 8.	Bash implementation:
 
-    After understanding the whole process from encrypted binary to decrypted flash-image, which decrypts the binary in 128kiB blocks and removes header and some trailing bytes.
+    The whole process from encrypted binary to decrypted flash-image, which decrypts the binary in 128kiB blocks and removes header and some trailing bytes is pretty straight forward.
     Following along step by step produces a UBI file and EMBA then extracts and analyzes its contents.
     
