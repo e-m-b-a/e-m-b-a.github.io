@@ -35,7 +35,7 @@ Process:
 
 2.	UART identification:
 
-    There are different ways to identify the Pin-layout of unlabeled UART-Interface, tools like JTAGulator or manually. But when GND and the Voltage-level is identified correctly, baudrate and rx/tx pins, can - if in question - just be found by trial and error.
+    There are different ways to identify the Pin-layout of unlabeled UART-Interface, tools like JTAGulator or manually. But when GND and the Voltage-level is identified correctly, baudrate and rx/tx pins, can - if in question - just be found via trial and error.
 
     ![setup](/img/dlink_enc_img/IMG_0249.jpg)
 
@@ -52,7 +52,6 @@ Process:
     One easy way to readout Flash-memory is via  [bcm-cfedump](https://github.com/Depau/bcm-cfedump), which uses the cfe-bootloader's dump command and saves the ASCII-hex data back into a binary file.
 
     ![flashdump](/img/dlink_enc_img/flash-dump.png)
-    ![flash](/img/dlink_enc_img/IMG_0250.jpg)
     
 5.	Flash-content analysis:
 
@@ -64,10 +63,12 @@ Process:
 
     `fota`, `fota_config`, `fota_output`, `prog.cgi` are interesting elf-files and had to be manually analyzed with [Ghidra](https://ghidra-sre.org/).
 
-7.	The Treasure/Solution:
+7.	The key:
 
     When reversing library functions used in those elf-files, it becomes apparent, that DLink uses a static decryption-algorithm to decode its firmware-updates.
     (`gj_decode()` in the `cms_util.so` library)
+
+    #TODO more ?
 
 8.	Bash implementation:
 
