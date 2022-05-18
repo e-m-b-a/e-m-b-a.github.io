@@ -4,7 +4,7 @@ description: "Version 1.0.0 - Singapore Edt. of EMBA is out"
 date: 2022-05-18T09:45:39+02:00
 authors:
   - Michael Messner
-draft: true
+draft: false
 tags:
   - EMBA
   - Blackhat
@@ -14,7 +14,7 @@ tags:
 
 ![Version-1.0.0](/img/v1.0.0-Singapore-Edt.png#center)
 
-In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0 is available. 
+In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 is available. 
 
 We are very proud of this release and we want to highlight some details in the form of "How it started" vs. "How is it going".
 
@@ -29,7 +29,7 @@ In August 2020 EMBA was already quite big with ~3400 lines of code. But today EM
 ![Version-1.0.0](/img/EMBA-v1.0.0-loc.png#center)
 
 ## Software components, vulnerabilities and exploits
-We know that you all love the automated detection of vulnerabilities and exploits from EMBA. This feature was not part of EMBA in August 2020, it was introduced between 12/2020 and 01/2021.
+We know you all love EMBA's automatic detection of vulnerabilities and exploits. This feature was not included in EMBA in August 2020, it was introduced between 12/2020 and 01/2021.
 
 ![Version-1.0.0](/img/EMBA-v1.0.0-software_components.png#center)
 
