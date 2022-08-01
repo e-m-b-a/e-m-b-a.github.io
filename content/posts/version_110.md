@@ -1,10 +1,10 @@
 ---
 title: "EMBA version 1.1.0 is out now"
 description: "Version 1.1.0 - Las Vegas Edt. of EMBA is out"
-date: 2022-07-01T13:37:00+02:00
+date: 2022-08-01T13:37:00+02:00
 authors:
   - Michael Messner
-draft: true
+draft: false
 tags:
   - EMBA
   - Blackhat
@@ -13,7 +13,7 @@ tags:
 
 ![Version-1.1.0](/img/v1.1.0-LasVegas-Edt.png#center)
 
-In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.1.0 was available. This time and 1766 commits later we have released **version 1.1.0** with a huge amount of improvements and new features.
+In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 was available. 1856 commits later **version 1.1.0** with a huge amount of improvements and new features was released.
 
 ## Just to give you a feeling of how massive this update is
 * Initial release had around **3400** lines of code
