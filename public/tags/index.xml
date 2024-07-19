@@ -1,20 +1,124 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on EMBARK BEYOND</title>
-    <link>https://e-m-b-a.github.io/tags/</link>
-    <description>Recent content in Tags on EMBARK BEYOND</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on EMBA BEYOND</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on EMBA BEYOND</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 16:21:53 +0100</lastBuildDate><atom:link href="https://e-m-b-a.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jul 2024 11:40:48 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>extractor, encrypted, qnap</title>
-      <link>https://e-m-b-a.github.io/tags/extractor-encrypted-qnap/</link>
-      <pubDate>Sat, 15 Jan 2022 16:21:53 +0100</pubDate>
-      
-      <guid>https://e-m-b-a.github.io/tags/extractor-encrypted-qnap/</guid>
+      <title>EMBA</title>
+      <link>http://localhost:1313/tags/emba/</link>
+      <pubDate>Wed, 17 Jul 2024 11:40:48 +0100</pubDate>
+      <guid>http://localhost:1313/tags/emba/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Release</title>
+      <link>http://localhost:1313/tags/release/</link>
+      <pubDate>Wed, 17 Jul 2024 11:40:48 +0100</pubDate>
+      <guid>http://localhost:1313/tags/release/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EMBArk</title>
+      <link>http://localhost:1313/tags/embark/</link>
+      <pubDate>Tue, 12 Dec 2023 08:48:42 +0100</pubDate>
+      <guid>http://localhost:1313/tags/embark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diffing</title>
+      <link>http://localhost:1313/tags/diffing/</link>
+      <pubDate>Tue, 07 Nov 2023 10:01:50 +0100</pubDate>
+      <guid>http://localhost:1313/tags/diffing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Tue, 07 Nov 2023 09:50:18 +0100</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPT</title>
+      <link>http://localhost:1313/tags/gpt/</link>
+      <pubDate>Tue, 07 Nov 2023 09:50:18 +0100</pubDate>
+      <guid>http://localhost:1313/tags/gpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blackhat</title>
+      <link>http://localhost:1313/tags/blackhat/</link>
+      <pubDate>Mon, 01 Aug 2022 13:37:00 +0200</pubDate>
+      <guid>http://localhost:1313/tags/blackhat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arsenal</title>
+      <link>http://localhost:1313/tags/arsenal/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:51 +0200</pubDate>
+      <guid>http://localhost:1313/tags/arsenal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DEFCON30</title>
+      <link>http://localhost:1313/tags/defcon30/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:51 +0200</pubDate>
+      <guid>http://localhost:1313/tags/defcon30/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BHASIA</title>
+      <link>http://localhost:1313/tags/bhasia/</link>
+      <pubDate>Sat, 07 May 2022 12:38:59 +0200</pubDate>
+      <guid>http://localhost:1313/tags/bhasia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Munich Edt</title>
+      <link>http://localhost:1313/tags/munich-edt/</link>
+      <pubDate>Thu, 17 Mar 2022 12:55:51 +0100</pubDate>
+      <guid>http://localhost:1313/tags/munich-edt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>V0.9.0</title>
+      <link>http://localhost:1313/tags/v0.9.0/</link>
+      <pubDate>Thu, 17 Mar 2022 12:55:51 +0100</pubDate>
+      <guid>http://localhost:1313/tags/v0.9.0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encrypted</title>
+      <link>http://localhost:1313/tags/encrypted/</link>
+      <pubDate>Tue, 08 Feb 2022 09:50:53 +0100</pubDate>
+      <guid>http://localhost:1313/tags/encrypted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Extractor</title>
+      <link>http://localhost:1313/tags/extractor/</link>
+      <pubDate>Tue, 08 Feb 2022 09:50:53 +0100</pubDate>
+      <guid>http://localhost:1313/tags/extractor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qnap</title>
+      <link>http://localhost:1313/tags/qnap/</link>
+      <pubDate>Tue, 08 Feb 2022 09:50:53 +0100</pubDate>
+      <guid>http://localhost:1313/tags/qnap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reporting</title>
+      <link>http://localhost:1313/tags/reporting/</link>
+      <pubDate>Thu, 27 Jan 2022 10:04:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/reporting/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
