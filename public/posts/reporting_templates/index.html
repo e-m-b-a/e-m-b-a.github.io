@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Reporting improvements for EMBA - EMBA BEYOND</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory ./report_templates. The naming of the files is quite strict. This means for the module P11_dlink_SHRS_enc_extract.sh a reporting template with the name P11_dlink_SHRS_enc_extract-post.sh or P11_dlink_SHRS_enc_extract-post.txt is used. The ending -pre is used for details printed at the beginning of the module, -post includes details shown at the end of the module." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/reporting_templates/">
+  <meta property="og:site_name" content="EMBA BEYOND">
+  <meta property="og:title" content="Reporting improvements for EMBA">
+  <meta property="og:description" content="We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory ./report_templates. The naming of the files is quite strict. This means for the module P11_dlink_SHRS_enc_extract.sh a reporting template with the name P11_dlink_SHRS_enc_extract-post.sh or P11_dlink_SHRS_enc_extract-post.txt is used. The ending -pre is used for details printed at the beginning of the module, -post includes details shown at the end of the module.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-01-27T10:04:00+01:00">
+    <meta property="article:modified_time" content="2022-01-27T10:04:00+01:00">
+    <meta property="article:tag" content="EMBA">
+    <meta property="article:tag" content="EMBArk">
+    <meta property="article:tag" content="Reporting">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reporting improvements for EMBA">
+  <meta name="twitter:description" content="We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory ./report_templates. The naming of the files is quite strict. This means for the module P11_dlink_SHRS_enc_extract.sh a reporting template with the name P11_dlink_SHRS_enc_extract-post.sh or P11_dlink_SHRS_enc_extract-post.txt is used. The ending -pre is used for details printed at the beginning of the module, -post includes details shown at the end of the module.">
+<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+	
+        <link href="http://localhost:1313/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"   />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/style.1c3be5204c15a2f4fb08f17a477d16e170af1aed32d486b044dbf7b6109d930c.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<a class="main" href="http://localhost:1313/"></a>
+	<nav>
+		
+		<a href="/posts/">Blog</a>
+		
+		
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PK23K2LEL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PK23K2LEL');
+        }
+      </script>
+    
+  
+
+
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Reporting improvements for EMBA</h1>
+			<div class="meta">Posted on Jan 27, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p>We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory <em>./report_templates</em>.
+The naming of the files is quite strict. This means for the module <em>P11_dlink_SHRS_enc_extract.sh</em> a reporting template with the name <em>P11_dlink_SHRS_enc_extract-post.sh</em> or <em>P11_dlink_SHRS_enc_extract-post.txt</em> is used. The ending <em>-pre</em> is used for details printed at the beginning of the module, <em>-post</em> includes details shown at the end of the module.
+If a text file is used, this is just echoed to the cli and to the report file via the command <em>cat</em>. If instead a shell script is found, this gets included via <em>source</em> command. With this mechanism you are able to use the full power of shell scripting in your reporting templates. Means also you can access all variables and print your own customised header/footer of the modules.</p>
+<p><img src="/img/emba_post-reporting.png" alt="EMBA reporting template used"></p>
+<p>The structure of the template directory looks like the following:</p>
+<pre tabindex="0"><code>report_templates
+├── F10_license_summary-post.sh
+├── F10_license_summary-pre.sh
+├── F20_vul_aggregator-pre.sh
+├── L10_system_emulator-pre.sh
+├── P11_dlink_SHRS_enc_extract-post.sh
+├── P11_dlink_SHRS_enc_extract-pre.sh
+├── P12_avm_freetz_ng_extract-pre.sh
+├── P13_uboot_mkimage-pre.sh
+├── P14_ext2_mounter-pre.sh
+├── P15_ubi_extractor-pre.sh
+├── P16_EnGenius_decryptor-post.sh
+├── P16_EnGenius_decryptor-pre.sh
+├── P17_gpg_decompress-pre.sh
+├── P18_qnap_decryptor-post.sh
+├── P18_qnap_decryptor-pre.sh
+├── S06_distribution_identification-pre.sh
+└── S09_firmware_base_version_check-post.txt
+</code></pre><p>The pre reporting templates are handled via the EMBA helper function <em>pre_module_reporter</em> and the post reporting templates are handled via the already available helper function <em>module_end_log</em>.</p>
+<p>The templates currently included in the installation are primarly for showing the possibilities of this new feature. We believe this is a great feature for every pentester to include the own descriptions into the EMBA reports.</p>
+<p>Additionally, we will improve the included templates over time. If you are interested in helping improving these templates <a href="https://github.com/e-m-b-a/emba/pulls">pull requests</a> are welcome.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/emba">EMBA</a></li>
+					
+					<li><a href="/tags/embark">EMBArk</a></li>
+					
+					<li><a href="/tags/reporting">reporting</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/e-m-b-a" title="GitHub"><i data-feather="github"></i></a>&nbsp;<a class="soc" href="https://twitter.com/securefirmware/" title="Twitter"><i data-feather="twitter"></i></a>&nbsp;
+<div class="tooltip"><a class="soc"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg></a>
+  <span class="tooltiptext">Build with Hugo & based on Archie Theme</span>
+</div>
+</footer>
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="securefirmware" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>

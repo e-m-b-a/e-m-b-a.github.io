@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Firmware diffing - EMBA BEYOND</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/firmware_diffing/">
+  <meta property="og:site_name" content="EMBA BEYOND">
+  <meta property="og:title" content="Firmware diffing">
+  <meta property="og:description" content="The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-07T10:01:50+01:00">
+    <meta property="article:modified_time" content="2023-11-07T10:01:50+01:00">
+    <meta property="article:tag" content="EMBA">
+    <meta property="article:tag" content="Diffing">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Firmware diffing">
+  <meta name="twitter:description" content="The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases.">
+<script src="http://localhost:1313/js/feather.min.js"></script>
+	
+	
+        <link href="http://localhost:1313/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"   />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/style.1c3be5204c15a2f4fb08f17a477d16e170af1aed32d486b044dbf7b6109d930c.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<a class="main" href="http://localhost:1313/"></a>
+	<nav>
+		
+		<a href="/posts/">Blog</a>
+		
+		
+    
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PK23K2LEL"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8PK23K2LEL');
+        }
+      </script>
+    
+  
+
+
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Firmware diffing</h1>
+			<div class="meta">Posted on Nov 7, 2023</div>
+		</div>
+		
+
+		<section class="body">
+			<p>The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases. This allows a tear down of the fixed vulnerability and probably write an exploit for it.</p>
+<p><em>EMBA</em> can support you in your tear down process as it is able to identify the differences between different firmware versions using <a href="https://en.wikipedia.org/wiki/Fuzzy_hashing">fuzzy hashing</a> with <a href="https://ssdeep-project.github.io/ssdeep/index.html">ssdeep</a>.</p>
+<p>For this diff mechanisms we introduced the <code>-o</code> option. This allows the setup of a 2nd firmware.</p>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/8e09ec21-e972-43a6-b656-89c9bb113516" alt="image"></p>
+<p>The 2nd firmware is usually the newer firmware version (the fixed one). Start <em>EMBA</em> with the following options to perform the firmware diffing procedure:</p>
+<pre tabindex="0"><code>sudo ./emba -f ~/DIR600B1_2_FW205b01.zip -o ~/DIR600B_FW206b01_FOR_Hardware_B.bin -l ~/emba_logs_dir600-diff
+</code></pre><p><strong>Note:</strong> <em>EMBA</em> does not perform a usual firmware analysis in this mode!</p>
+<h2 id="overview-of-both-firmware-images">Overview of both firmware images</h2>
+<p>In diff mode <em>EMBA</em> first gives some details of both firmware images. This is similar to the already known <a href="https://github.com/e-m-b-a/emba/blob/master/modules/P02_firmware_bin_file_check.sh">P02 module</a> but for both firmware images.</p>
+<h3 id="1st-firmware-overview">1st firmware overview:</h3>
+<p>In the following screenshot some details of the firmware images are shown. Currently, the available details are the output of the file command, entropy analysis, checksum and a the output of the first few bytes as hexdump:</p>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/d682807f-29b9-49d9-b603-8221368e00a9" alt="image"></p>
+<h3 id="2nd-firmware-overview">2nd firmware overview:</h3>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/d494f566-ebc5-4673-bf0a-0591838121fd" alt="image"></p>
+<h2 id="extraction-of-both-firmware-images">Extraction of both firmware images</h2>
+<p>For further analysis it is needed to extract both firmware images before comparing them. As usual we are using Unblob as our main extractor:</p>
+<h3 id="1st-firmware-extraction">1st firmware extraction:</h3>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/5f9ae6fe-591c-4583-bd20-cbaa0ddf6987" alt="image"></p>
+<h3 id="2nd-firmware-extraction">2nd firmware extraction:</h3>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/d4fbebc3-73a3-4153-bcea-543a1b7851f1" alt="image"></p>
+<h2 id="fuzz-diffing-firmware">Fuzz diffing firmware</h2>
+<p>Finally <em>EMBA</em> tries to find every file from the first directory/firmware als in the second extracted firmware directory. If the file is available we automatically check if it is a binary or something clear text.</p>
+<h3 id="overview-page">Overview page:</h3>
+<p>The overview page is the main page of the firmware diffing results. It shows if a file is modified, if it is something kind of ascii or binary and finally it links to further results:</p>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/3e6cd757-8231-4bbf-a9b9-1095cae3a670" alt="image"></p>
+<h3 id="ascii-diffing-details">ASCII diffing details:</h3>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/81fbbdc6-9b5b-4b67-b2e2-f642a6ab81be" alt="image"></p>
+<h3 id="binary-diffing-details">Binary diffing details:</h3>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/4e308b32-6fe4-4c2a-bfa1-8c3f07c9ae09" alt="image"></p>
+<p><img src="https://github.com/e-m-b-a/emba/assets/497520/098f6fbc-0909-4f78-8aad-2accfccdf811" alt="image"></p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/emba">EMBA</a></li>
+					
+					<li><a href="/tags/diffing">Diffing</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr><a class="soc" href="https://github.com/e-m-b-a" title="GitHub"><i data-feather="github"></i></a>&nbsp;<a class="soc" href="https://twitter.com/securefirmware/" title="Twitter"><i data-feather="twitter"></i></a>&nbsp;
+<div class="tooltip"><a class="soc"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg></a>
+  <span class="tooltiptext">Build with Hugo & based on Archie Theme</span>
+</div>
+</footer>
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="securefirmware" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+      feather.replace()
+</script></div>
+    </body>
+</html>

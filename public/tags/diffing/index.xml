@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diffing on EMBA BEYOND</title>
+    <link>http://localhost:1313/tags/diffing/</link>
+    <description>Recent content in Diffing on EMBA BEYOND</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Nov 2023 10:01:50 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/diffing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firmware diffing</title>
+      <link>http://localhost:1313/posts/firmware_diffing/</link>
+      <pubDate>Tue, 07 Nov 2023 10:01:50 +0100</pubDate>
+      <guid>http://localhost:1313/posts/firmware_diffing/</guid>
+      <description>The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases.</description>
+    </item>
+  </channel>
+</rss>

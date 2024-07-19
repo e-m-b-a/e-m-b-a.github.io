@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BHASIA on EMBA BEYOND</title>
+    <link>http://localhost:1313/tags/bhasia/</link>
+    <description>Recent content in BHASIA on EMBA BEYOND</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 May 2022 12:38:59 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bhasia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Join us at Black Hat Asia</title>
+      <link>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</link>
+      <pubDate>Sat, 07 May 2022 12:38:59 +0200</pubDate>
+      <guid>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</guid>
+      <description>You can attend the Black Hat Business Hall for free - check it out and join our talk on firmware analysis with EMBA here.</description>
+    </item>
+  </channel>
+</rss>

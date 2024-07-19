@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arsenal on EMBA BEYOND</title>
+    <link>http://localhost:1313/tags/arsenal/</link>
+    <description>Recent content in Arsenal on EMBA BEYOND</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jul 2022 09:04:51 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/arsenal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EMBA goes to Vegas baby</title>
+      <link>http://localhost:1313/posts/lasvegas_intro_2022/</link>
+      <pubDate>Thu, 21 Jul 2022 09:04:51 +0200</pubDate>
+      <guid>http://localhost:1313/posts/lasvegas_intro_2022/</guid>
+      <description>It’s official, in August Pascal and myself will present the firmware security analyzer EMBA at Black Hat and DEF CON in Las Vegas. We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage! As this is not enough, we are planning to release a huge update for EMBA &amp;hellip; stay tuned&#xA;You can find further details at the Black Hat USA Arsenal page and the DEF CON 30 forum</description>
+    </item>
+    <item>
+      <title>Join us at Black Hat Asia</title>
+      <link>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</link>
+      <pubDate>Sat, 07 May 2022 12:38:59 +0200</pubDate>
+      <guid>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</guid>
+      <description>You can attend the Black Hat Business Hall for free - check it out and join our talk on firmware analysis with EMBA here.</description>
+    </item>
+    <item>
+      <title>Black Hat Asia with EMBA</title>
+      <link>http://localhost:1313/posts/blackhat_asia_arsenal_2022/</link>
+      <pubDate>Wed, 16 Mar 2022 12:07:16 +0100</pubDate>
+      <guid>http://localhost:1313/posts/blackhat_asia_arsenal_2022/</guid>
+      <description>It’s official, in May Pascal and myself will present EMBA the firmware security scanner at Black Hat ASIA 2022. We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage!&#xA;You can find further details at the Black Hat Asia Arsenal page.</description>
+    </item>
+  </channel>
+</rss>
