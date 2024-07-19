@@ -6,14 +6,14 @@
     <description>Recent content on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jul 2024 14:27:41 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2024 14:27:41 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leveraging Automated Firmware Analysis with the Open-Source Firmware Analyzer EMBA</title>
       <link>http://localhost:1313/posts/leveragingautomatedfirmwareanalysis/</link>
-      <pubDate>Wed, 17 Jul 2024 14:27:41 +0200</pubDate>
+      <pubDate>Fri, 19 Jul 2024 14:27:41 +0200</pubDate>
       <guid>http://localhost:1313/posts/leveragingautomatedfirmwareanalysis/</guid>
-      <description></description>
+      <description>The Internet of Things (IoT) ecosystem as well as critical infrastructure represents a rapidly growing technology field that connects billions of devices worldwide. The operating system of these devices is usually called firmware which is the foundational software that controls their functionality. The firmware could be some kind of real-time operating system, it could be Linux based or in very rare cases also a Windows operating system. Ensuring the security and integrity of firmware is crucial to prevent malicious attacks and unauthorized access.</description>
     </item>
     <item>
       <title>EMBA version 1.4.1 is out now</title>
