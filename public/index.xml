@@ -6,8 +6,15 @@
     <description>Recent content on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 14:27:41 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 09:01:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency track integration</title>
+      <link>http://localhost:1313/posts/dependency_track_integration/</link>
+      <pubDate>Wed, 26 Nov 2025 09:01:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dependency_track_integration/</guid>
+      <description>EMBA is now able to automatically upload the generated SBOM to your dependency track instance.&#xA;To be able to use the dependency track API a API key and special permissions are needed. The following screenshot shows how to create a new Team with an API key and the needed permissions:&#xA;EMBA needs the following dependency track permissions:&#xA;BOM_UPLOAD PROJECT_CREATION_UPLOAD VIEW_PORTFOLIO You can find further details about the API within the dependency track documentation here.</description>
+    </item>
     <item>
       <title>Leveraging Automated Firmware Analysis with the Open-Source Firmware Analyzer EMBA</title>
       <link>http://localhost:1313/posts/leveragingautomatedfirmwareanalysis/</link>
