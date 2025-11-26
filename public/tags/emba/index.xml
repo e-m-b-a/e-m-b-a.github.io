@@ -2,129 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EMBA on EMBA BEYOND</title>
-    <link>http://localhost:1313/tags/emba/</link>
+    <link>https://www.securefirmware.de/tags/emba/</link>
     <description>Recent content in EMBA on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 14:27:41 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/emba/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Nov 2025 09:01:00 +0100</lastBuildDate>
+    <atom:link href="https://www.securefirmware.de/tags/emba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency track integration</title>
+      <link>https://www.securefirmware.de/posts/dependency_track_integration/</link>
+      <pubDate>Wed, 26 Nov 2025 09:01:00 +0100</pubDate>
+      <guid>https://www.securefirmware.de/posts/dependency_track_integration/</guid>
+      <description>EMBA is now able to automatically upload the generated SBOM to your dependency track instance.&#xA;To be able to use the dependency track API a API key and special permissions are needed. The following screenshot shows how to create a new Team with an API key and the needed permissions:&#xA;EMBA needs the following dependency track permissions:&#xA;BOM_UPLOAD PROJECT_CREATION_UPLOAD VIEW_PORTFOLIO You can find further details about the API within the dependency track documentation here.</description>
+    </item>
     <item>
       <title>Leveraging Automated Firmware Analysis with the Open-Source Firmware Analyzer EMBA</title>
-      <link>http://localhost:1313/posts/leveragingautomatedfirmwareanalysis/</link>
+      <link>https://www.securefirmware.de/posts/leveragingautomatedfirmwareanalysis/</link>
       <pubDate>Fri, 19 Jul 2024 14:27:41 +0200</pubDate>
-      <guid>http://localhost:1313/posts/leveragingautomatedfirmwareanalysis/</guid>
+      <guid>https://www.securefirmware.de/posts/leveragingautomatedfirmwareanalysis/</guid>
       <description>The Internet of Things (IoT) ecosystem as well as critical infrastructure represents a rapidly growing technology field that connects billions of devices worldwide. The operating system of these devices is usually called firmware which is the foundational software that controls their functionality. The firmware could be some kind of real-time operating system, it could be Linux based or in very rare cases also a Windows operating system. Ensuring the security and integrity of firmware is crucial to prevent malicious attacks and unauthorized access.</description>
     </item>
     <item>
       <title>EMBA version 1.4.1 is out now</title>
-      <link>http://localhost:1313/posts/version_141/</link>
+      <link>https://www.securefirmware.de/posts/version_141/</link>
       <pubDate>Wed, 17 Jul 2024 11:40:48 +0100</pubDate>
-      <guid>http://localhost:1313/posts/version_141/</guid>
+      <guid>https://www.securefirmware.de/posts/version_141/</guid>
       <description>Probably you all know that it is the 25th anniversary of the legendary Matrix movie! With the latest release EMBA got massive improvements in building the Matrix via emulation.&#xA;This release reflects the recent updates in our system emulation engine.&#xA;Short summary of the latest highlights:&#xA;We started rebuilding and upgrading the toolchain of the system emulation engine - With the current work in place we can further update the outdated FirmAE and firmadyne environment which our emulation engine is originally based on Linux kernel upgraded from version 4.</description>
     </item>
     <item>
       <title>EMBA version 1.4.0 is out now</title>
-      <link>http://localhost:1313/posts/version_140/</link>
+      <link>https://www.securefirmware.de/posts/version_140/</link>
       <pubDate>Tue, 05 Mar 2024 11:40:48 +0100</pubDate>
-      <guid>http://localhost:1313/posts/version_140/</guid>
+      <guid>https://www.securefirmware.de/posts/version_140/</guid>
       <description>As we do a lot of ICS/OT testing in our daily business, we thought this release should reflect our usual EMBA usage scenario. Welcome to another huge EMBA release with a lot new features: EMBA v1.4.0 - ICS testing Editition&#xA;This time we have collected the following highlights for you:&#xA;less bugs -&amp;gt; more code -&amp;gt; more bugs? -&amp;gt; report all our bugs here Extended binary analysis via semgrep (see module s16) New static perl analysis via zarn (see module s27) Toolchain identification (see wiki) Improved update checking (see wiki) New scan interface (with integrated status bar) automatically enabled in most scan-profiles Improved multiple backend workflows Massive speedup of multiple EMBA modules (see https://github.</description>
     </item>
     <item>
       <title>Hello EMBArk</title>
-      <link>http://localhost:1313/posts/hello_embark/</link>
+      <link>https://www.securefirmware.de/posts/hello_embark/</link>
       <pubDate>Tue, 12 Dec 2023 08:48:42 +0100</pubDate>
-      <guid>http://localhost:1313/posts/hello_embark/</guid>
+      <guid>https://www.securefirmware.de/posts/hello_embark/</guid>
       <description>Everything started as an idea in the beginning of 2021. The idea was to build an enterprise ready open source firmware analysis environment on top of EMBA. This environment should allow every product security team as well as every penetration tester and security researcher to use professional firmware analysis to improve the security of IoT/OT/ICS &amp;hellip; (you name it) devices as easy as possible. This idea was mixed up to an AMOS research project, where a team of students built a first PoC of EMBArk.</description>
     </item>
     <item>
       <title>Firmware diffing</title>
-      <link>http://localhost:1313/posts/firmware_diffing/</link>
+      <link>https://www.securefirmware.de/posts/firmware_diffing/</link>
       <pubDate>Tue, 07 Nov 2023 10:01:50 +0100</pubDate>
-      <guid>http://localhost:1313/posts/firmware_diffing/</guid>
+      <guid>https://www.securefirmware.de/posts/firmware_diffing/</guid>
       <description>The identification of the relevant changes between firmware releases is an essential step in bug hunting. For example, in exploit development you are sometimes interested in the changes between two firmware versions - The vulnerable version compared to the fixed version. As it is usually quite hard to extract enough useful information from the published advisories or the CVE details, the only possibility is to check the real differences between the relevant firmware releases.</description>
     </item>
     <item>
       <title>EMBA version 1.3.1 is out now</title>
-      <link>http://localhost:1313/posts/version_131/</link>
+      <link>https://www.securefirmware.de/posts/version_131/</link>
       <pubDate>Tue, 07 Nov 2023 09:53:24 +0100</pubDate>
-      <guid>http://localhost:1313/posts/version_131/</guid>
+      <guid>https://www.securefirmware.de/posts/version_131/</guid>
       <description>What happened since the last EMBA release?&#xA;There was the absolute great #Hackersummercamp with our talks at BSidesLV, ICS Village (DEF CON) and Black Hat (Arsenal). The recording of the BSides talk is already available here. Beside this, Nate did a really great talk at BruCON – see here.&#xA;Beside a lot of code cleanup, bug fixing and some little improvements the new firmware diffing mode is one of the highlights in version 1.</description>
     </item>
     <item>
       <title>AI supported firmware analysis</title>
-      <link>http://localhost:1313/posts/ai_powered_firmware_analysis/</link>
+      <link>https://www.securefirmware.de/posts/ai_powered_firmware_analysis/</link>
       <pubDate>Tue, 07 Nov 2023 09:50:18 +0100</pubDate>
-      <guid>http://localhost:1313/posts/ai_powered_firmware_analysis/</guid>
+      <guid>https://www.securefirmware.de/posts/ai_powered_firmware_analysis/</guid>
       <description>EMBA - The AI powered firmware security analyzer Why not use AI for firmware analysis? This is the idea we had since the public release of OpenAI&amp;rsquo;s GPT-3 and GPT-4 earlier this year.&#xA;We started testing OpenAI&amp;rsquo;s ChatGPT for different possible usage scenarios like the integration of further CVE explanation:&#xA;Additionally, we thought about a quick lookup for potential exploit code or POC’s:&#xA;It can be seen that the available information is quite limited because of the limited dataset for these types of requests.</description>
     </item>
     <item>
       <title>EMBA version 1.1.2 is out now</title>
-      <link>http://localhost:1313/posts/version_112_knightrider/</link>
+      <link>https://www.securefirmware.de/posts/version_112_knightrider/</link>
       <pubDate>Thu, 06 Oct 2022 13:37:00 +0200</pubDate>
-      <guid>http://localhost:1313/posts/version_112_knightrider/</guid>
+      <guid>https://www.securefirmware.de/posts/version_112_knightrider/</guid>
       <description>Bonnie: I have a new feature integrated into K.I.T.T. Michael: Give me more details K.I.T.T.: With my new friend EMBA I am able to find the weak spot in every firmware.&#xA;40 years later &amp;hellip; K.I.T.T. is definitive able to analyze firmware with EMBA&#xA;Beside bug fixes this release introduces many new features. Since version 1.1.1 we introduced several new features and multiple improved areas:&#xA;Thx to @nuschpl the Installer supports non-english systems (see https://github.</description>
     </item>
     <item>
       <title>EMBA version 1.1.0 is out now</title>
-      <link>http://localhost:1313/posts/version_110/</link>
+      <link>https://www.securefirmware.de/posts/version_110/</link>
       <pubDate>Mon, 01 Aug 2022 13:37:00 +0200</pubDate>
-      <guid>http://localhost:1313/posts/version_110/</guid>
+      <guid>https://www.securefirmware.de/posts/version_110/</guid>
       <description>In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 was available. 1856 commits later version 1.1.0 with a huge amount of improvements and new features was released.&#xA;Just to give you a feeling of how massive this update is Initial release had around 3400 lines of code Version 1.0.0 had around 12000 lines of code And now, Version 1.1.0 has more than 20000 lines of code New system-mode emulation environment We have replaced the old system-mode emulation modules completely with a new and improved environment.</description>
     </item>
     <item>
       <title>EMBA goes to Vegas baby</title>
-      <link>http://localhost:1313/posts/lasvegas_intro_2022/</link>
+      <link>https://www.securefirmware.de/posts/lasvegas_intro_2022/</link>
       <pubDate>Thu, 21 Jul 2022 09:04:51 +0200</pubDate>
-      <guid>http://localhost:1313/posts/lasvegas_intro_2022/</guid>
+      <guid>https://www.securefirmware.de/posts/lasvegas_intro_2022/</guid>
       <description>It’s official, in August Pascal and myself will present the firmware security analyzer EMBA at Black Hat and DEF CON in Las Vegas. We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage! As this is not enough, we are planning to release a huge update for EMBA &amp;hellip; stay tuned&#xA;You can find further details at the Black Hat USA Arsenal page and the DEF CON 30 forum</description>
     </item>
     <item>
       <title>EMBA Version 1.0.0 is out now</title>
-      <link>http://localhost:1313/posts/version100/</link>
+      <link>https://www.securefirmware.de/posts/version100/</link>
       <pubDate>Wed, 18 May 2022 09:45:39 +0200</pubDate>
-      <guid>http://localhost:1313/posts/version100/</guid>
+      <guid>https://www.securefirmware.de/posts/version100/</guid>
       <description>In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 is available.&#xA;We are very proud of this release and we want to highlight some details in the form of &amp;ldquo;How it started&amp;rdquo; vs. &amp;ldquo;How is it going&amp;rdquo;.&#xA;Included modules In August 2020 we started with 26 EMBA modules. Today EMBA has around 60 public modules.&#xA;Lines of Code In August 2020 EMBA was already quite big with ~3400 lines of code.</description>
     </item>
     <item>
       <title>Join us at Black Hat Asia</title>
-      <link>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</link>
+      <link>https://www.securefirmware.de/posts/emba_black_hat_asia_arsenal_2022/</link>
       <pubDate>Sat, 07 May 2022 12:38:59 +0200</pubDate>
-      <guid>http://localhost:1313/posts/emba_black_hat_asia_arsenal_2022/</guid>
+      <guid>https://www.securefirmware.de/posts/emba_black_hat_asia_arsenal_2022/</guid>
       <description>You can attend the Black Hat Business Hall for free - check it out and join our talk on firmware analysis with EMBA here.</description>
     </item>
     <item>
       <title>EMBA v0.9.0 - Munich Edt released</title>
-      <link>http://localhost:1313/posts/munich-edt/</link>
+      <link>https://www.securefirmware.de/posts/munich-edt/</link>
       <pubDate>Thu, 17 Mar 2022 12:55:51 +0100</pubDate>
-      <guid>http://localhost:1313/posts/munich-edt/</guid>
+      <guid>https://www.securefirmware.de/posts/munich-edt/</guid>
       <description>After around 1 and a half year of continuous development (and 1500 commits) we have decided to create our first official EMBA release.&#xA;Welcome EMBA v0.9.0 - Munich Edt.&#xA;Let&amp;rsquo;s celebrate our initial release!&#xA;Keep on using EMBA and improve firmware security!</description>
     </item>
     <item>
       <title>Black Hat Asia with EMBA</title>
-      <link>http://localhost:1313/posts/blackhat_asia_arsenal_2022/</link>
+      <link>https://www.securefirmware.de/posts/blackhat_asia_arsenal_2022/</link>
       <pubDate>Wed, 16 Mar 2022 12:07:16 +0100</pubDate>
-      <guid>http://localhost:1313/posts/blackhat_asia_arsenal_2022/</guid>
+      <guid>https://www.securefirmware.de/posts/blackhat_asia_arsenal_2022/</guid>
       <description>It’s official, in May Pascal and myself will present EMBA the firmware security scanner at Black Hat ASIA 2022. We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage!&#xA;You can find further details at the Black Hat Asia Arsenal page.</description>
     </item>
     <item>
       <title>QNAP firmware extractor module - from 0 to full firmware analysis</title>
-      <link>http://localhost:1313/posts/qnap_decryptor/</link>
+      <link>https://www.securefirmware.de/posts/qnap_decryptor/</link>
       <pubDate>Tue, 08 Feb 2022 09:50:53 +0100</pubDate>
-      <guid>http://localhost:1313/posts/qnap_decryptor/</guid>
+      <guid>https://www.securefirmware.de/posts/qnap_decryptor/</guid>
       <description>On one of our last penetration tests we had a QNAP device in front of us. While we started investigating the device via the network, we also wanted to use our firmware scanner EMBA for the automated firmware analysis tasks. The firmware was available from the QNAP download site and starting EMBA with the default profile looks like a quick win. After a while we realised that EMBA was running into the deep-extraction mode and finally failed extracting the needed firmware.</description>
     </item>
     <item>
       <title>Reporting improvements for EMBA</title>
-      <link>http://localhost:1313/posts/reporting_templates/</link>
+      <link>https://www.securefirmware.de/posts/reporting_templates/</link>
       <pubDate>Thu, 27 Jan 2022 10:04:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/reporting_templates/</guid>
+      <guid>https://www.securefirmware.de/posts/reporting_templates/</guid>
       <description>We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory ./report_templates. The naming of the files is quite strict. This means for the module P11_dlink_SHRS_enc_extract.sh a reporting template with the name P11_dlink_SHRS_enc_extract-post.sh or P11_dlink_SHRS_enc_extract-post.txt is used. The ending -pre is used for details printed at the beginning of the module, -post includes details shown at the end of the module.</description>
     </item>
     <item>
       <title>Hello World from EMBA</title>
-      <link>http://localhost:1313/posts/hello_world/</link>
+      <link>https://www.securefirmware.de/posts/hello_world/</link>
       <pubDate>Mon, 24 Jan 2022 12:35:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/hello_world/</guid>
+      <guid>https://www.securefirmware.de/posts/hello_world/</guid>
       <description>Here is the EMBA team with a brand new blog around EMBA and EMBArk the firmware scanning environment.&#xA;In the near future you will find some blog posts on things we are working on and firmware security scanning in general. For now enjoy the EMBA video.&#xA;stay tuned &amp;hellip;</description>
     </item>
   </channel>

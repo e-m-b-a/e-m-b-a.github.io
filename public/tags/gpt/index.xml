@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GPT on EMBA BEYOND</title>
-    <link>http://localhost:1313/tags/gpt/</link>
+    <link>https://www.securefirmware.de/tags/gpt/</link>
     <description>Recent content in GPT on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Nov 2023 09:50:18 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.securefirmware.de/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI supported firmware analysis</title>
-      <link>http://localhost:1313/posts/ai_powered_firmware_analysis/</link>
+      <link>https://www.securefirmware.de/posts/ai_powered_firmware_analysis/</link>
       <pubDate>Tue, 07 Nov 2023 09:50:18 +0100</pubDate>
-      <guid>http://localhost:1313/posts/ai_powered_firmware_analysis/</guid>
+      <guid>https://www.securefirmware.de/posts/ai_powered_firmware_analysis/</guid>
       <description>EMBA - The AI powered firmware security analyzer Why not use AI for firmware analysis? This is the idea we had since the public release of OpenAI&amp;rsquo;s GPT-3 and GPT-4 earlier this year.&#xA;We started testing OpenAI&amp;rsquo;s ChatGPT for different possible usage scenarios like the integration of further CVE explanation:&#xA;Additionally, we thought about a quick lookup for potential exploit code or POC’s:&#xA;It can be seen that the available information is quite limited because of the limited dataset for these types of requests.</description>
     </item>
   </channel>
