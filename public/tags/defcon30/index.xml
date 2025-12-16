@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DEFCON30 on EMBA BEYOND</title>
-    <link>https://www.securefirmware.de/tags/defcon30/</link>
+    <link>http://localhost:1313/tags/defcon30/</link>
     <description>Recent content in DEFCON30 on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Jul 2022 09:04:51 +0200</lastBuildDate>
-    <atom:link href="https://www.securefirmware.de/tags/defcon30/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/defcon30/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EMBA goes to Vegas baby</title>
-      <link>https://www.securefirmware.de/posts/lasvegas_intro_2022/</link>
+      <link>http://localhost:1313/posts/lasvegas_intro_2022/</link>
       <pubDate>Thu, 21 Jul 2022 09:04:51 +0200</pubDate>
-      <guid>https://www.securefirmware.de/posts/lasvegas_intro_2022/</guid>
+      <guid>http://localhost:1313/posts/lasvegas_intro_2022/</guid>
       <description>It’s official, in August Pascal and myself will present the firmware security analyzer EMBA at Black Hat and DEF CON in Las Vegas. We are super excited and happy to have the possibility to show you the best firmware scanner on the best stage! As this is not enough, we are planning to release a huge update for EMBA &amp;hellip; stay tuned&#xA;You can find further details at the Black Hat USA Arsenal page and the DEF CON 30 forum</description>
     </item>
   </channel>

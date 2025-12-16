@@ -2,59 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Release on EMBA BEYOND</title>
-    <link>https://www.securefirmware.de/tags/release/</link>
+    <link>http://localhost:1313/tags/release/</link>
     <description>Recent content in Release on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jul 2024 11:40:48 +0100</lastBuildDate>
-    <atom:link href="https://www.securefirmware.de/tags/release/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Dec 2025 12:58:37 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/release/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EMBA version 2.0.0 is out now</title>
+      <link>http://localhost:1313/posts/version_200/</link>
+      <pubDate>Wed, 03 Dec 2025 12:58:37 +0100</pubDate>
+      <guid>http://localhost:1313/posts/version_200/</guid>
+      <description>The last few weeks looked a bit more silent to the outside &amp;hellip; but cool things were going on in the background. Now, it is time to share all the great things we were working on ;)&#xA;In the early days of the EMBA firmware analysis environment one of our visions was a bit like the following:&#xA;The complete environment needs to be available as Open-Source which allows you to be part of it.</description>
+    </item>
     <item>
       <title>EMBA version 1.4.1 is out now</title>
-      <link>https://www.securefirmware.de/posts/version_141/</link>
+      <link>http://localhost:1313/posts/version_141/</link>
       <pubDate>Wed, 17 Jul 2024 11:40:48 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/version_141/</guid>
+      <guid>http://localhost:1313/posts/version_141/</guid>
       <description>Probably you all know that it is the 25th anniversary of the legendary Matrix movie! With the latest release EMBA got massive improvements in building the Matrix via emulation.&#xA;This release reflects the recent updates in our system emulation engine.&#xA;Short summary of the latest highlights:&#xA;We started rebuilding and upgrading the toolchain of the system emulation engine - With the current work in place we can further update the outdated FirmAE and firmadyne environment which our emulation engine is originally based on Linux kernel upgraded from version 4.</description>
     </item>
     <item>
       <title>EMBA version 1.4.0 is out now</title>
-      <link>https://www.securefirmware.de/posts/version_140/</link>
+      <link>http://localhost:1313/posts/version_140/</link>
       <pubDate>Tue, 05 Mar 2024 11:40:48 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/version_140/</guid>
+      <guid>http://localhost:1313/posts/version_140/</guid>
       <description>As we do a lot of ICS/OT testing in our daily business, we thought this release should reflect our usual EMBA usage scenario. Welcome to another huge EMBA release with a lot new features: EMBA v1.4.0 - ICS testing Editition&#xA;This time we have collected the following highlights for you:&#xA;less bugs -&amp;gt; more code -&amp;gt; more bugs? -&amp;gt; report all our bugs here Extended binary analysis via semgrep (see module s16) New static perl analysis via zarn (see module s27) Toolchain identification (see wiki) Improved update checking (see wiki) New scan interface (with integrated status bar) automatically enabled in most scan-profiles Improved multiple backend workflows Massive speedup of multiple EMBA modules (see https://github.</description>
     </item>
     <item>
       <title>EMBA version 1.3.1 is out now</title>
-      <link>https://www.securefirmware.de/posts/version_131/</link>
+      <link>http://localhost:1313/posts/version_131/</link>
       <pubDate>Tue, 07 Nov 2023 09:53:24 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/version_131/</guid>
+      <guid>http://localhost:1313/posts/version_131/</guid>
       <description>What happened since the last EMBA release?&#xA;There was the absolute great #Hackersummercamp with our talks at BSidesLV, ICS Village (DEF CON) and Black Hat (Arsenal). The recording of the BSides talk is already available here. Beside this, Nate did a really great talk at BruCON – see here.&#xA;Beside a lot of code cleanup, bug fixing and some little improvements the new firmware diffing mode is one of the highlights in version 1.</description>
     </item>
     <item>
       <title>EMBA version 1.1.2 is out now</title>
-      <link>https://www.securefirmware.de/posts/version_112_knightrider/</link>
+      <link>http://localhost:1313/posts/version_112_knightrider/</link>
       <pubDate>Thu, 06 Oct 2022 13:37:00 +0200</pubDate>
-      <guid>https://www.securefirmware.de/posts/version_112_knightrider/</guid>
+      <guid>http://localhost:1313/posts/version_112_knightrider/</guid>
       <description>Bonnie: I have a new feature integrated into K.I.T.T. Michael: Give me more details K.I.T.T.: With my new friend EMBA I am able to find the weak spot in every firmware.&#xA;40 years later &amp;hellip; K.I.T.T. is definitive able to analyze firmware with EMBA&#xA;Beside bug fixes this release introduces many new features. Since version 1.1.1 we introduced several new features and multiple improved areas:&#xA;Thx to @nuschpl the Installer supports non-english systems (see https://github.</description>
     </item>
     <item>
       <title>EMBA version 1.1.0 is out now</title>
-      <link>https://www.securefirmware.de/posts/version_110/</link>
+      <link>http://localhost:1313/posts/version_110/</link>
       <pubDate>Mon, 01 Aug 2022 13:37:00 +0200</pubDate>
-      <guid>https://www.securefirmware.de/posts/version_110/</guid>
+      <guid>http://localhost:1313/posts/version_110/</guid>
       <description>In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 was available. 1856 commits later version 1.1.0 with a huge amount of improvements and new features was released.&#xA;Just to give you a feeling of how massive this update is Initial release had around 3400 lines of code Version 1.0.0 had around 12000 lines of code And now, Version 1.1.0 has more than 20000 lines of code New system-mode emulation environment We have replaced the old system-mode emulation modules completely with a new and improved environment.</description>
     </item>
     <item>
       <title>EMBA Version 1.0.0 is out now</title>
-      <link>https://www.securefirmware.de/posts/version100/</link>
+      <link>http://localhost:1313/posts/version100/</link>
       <pubDate>Wed, 18 May 2022 09:45:39 +0200</pubDate>
-      <guid>https://www.securefirmware.de/posts/version100/</guid>
+      <guid>http://localhost:1313/posts/version100/</guid>
       <description>In August 2020 we released EMBA to the world. 21 months or 1600 commits later version 1.0.0 is available.&#xA;We are very proud of this release and we want to highlight some details in the form of &amp;ldquo;How it started&amp;rdquo; vs. &amp;ldquo;How is it going&amp;rdquo;.&#xA;Included modules In August 2020 we started with 26 EMBA modules. Today EMBA has around 60 public modules.&#xA;Lines of Code In August 2020 EMBA was already quite big with ~3400 lines of code.</description>
     </item>
     <item>
       <title>EMBA v0.9.0 - Munich Edt released</title>
-      <link>https://www.securefirmware.de/posts/munich-edt/</link>
+      <link>http://localhost:1313/posts/munich-edt/</link>
       <pubDate>Thu, 17 Mar 2022 12:55:51 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/munich-edt/</guid>
+      <guid>http://localhost:1313/posts/munich-edt/</guid>
       <description>After around 1 and a half year of continuous development (and 1500 commits) we have decided to create our first official EMBA release.&#xA;Welcome EMBA v0.9.0 - Munich Edt.&#xA;Let&amp;rsquo;s celebrate our initial release!&#xA;Keep on using EMBA and improve firmware security!</description>
     </item>
   </channel>

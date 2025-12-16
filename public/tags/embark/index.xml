@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EMBArk on EMBA BEYOND</title>
-    <link>https://www.securefirmware.de/tags/embark/</link>
+    <link>http://localhost:1313/tags/embark/</link>
     <description>Recent content in EMBArk on EMBA BEYOND</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Dec 2023 08:48:42 +0100</lastBuildDate>
-    <atom:link href="https://www.securefirmware.de/tags/embark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/embark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello EMBArk</title>
-      <link>https://www.securefirmware.de/posts/hello_embark/</link>
+      <link>http://localhost:1313/posts/hello_embark/</link>
       <pubDate>Tue, 12 Dec 2023 08:48:42 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/hello_embark/</guid>
+      <guid>http://localhost:1313/posts/hello_embark/</guid>
       <description>Everything started as an idea in the beginning of 2021. The idea was to build an enterprise ready open source firmware analysis environment on top of EMBA. This environment should allow every product security team as well as every penetration tester and security researcher to use professional firmware analysis to improve the security of IoT/OT/ICS &amp;hellip; (you name it) devices as easy as possible. This idea was mixed up to an AMOS research project, where a team of students built a first PoC of EMBArk.</description>
     </item>
     <item>
       <title>EMBArk - the enterprise ready firmware scanning environment</title>
-      <link>https://www.securefirmware.de/posts/embark_intro/</link>
+      <link>http://localhost:1313/posts/embark_intro/</link>
       <pubDate>Tue, 01 Feb 2022 08:03:48 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/embark_intro/</guid>
+      <guid>http://localhost:1313/posts/embark_intro/</guid>
       <description>EMBA is a command line tool only, which is primarly designed for penetration testers. In contradiction to this, EMBArk is the enterprise ready front-end wich uses EMBA as scanning back end. EMBArk is a Django based web front end which allows the management of the firmware scanning environment on one central system. Via EMBArk it is possible for multiple users (e.g. a pentesting or dev team) to access the scanner and initiate scan tasks via the web browser.</description>
     </item>
     <item>
       <title>Reporting improvements for EMBA</title>
-      <link>https://www.securefirmware.de/posts/reporting_templates/</link>
+      <link>http://localhost:1313/posts/reporting_templates/</link>
       <pubDate>Thu, 27 Jan 2022 10:04:00 +0100</pubDate>
-      <guid>https://www.securefirmware.de/posts/reporting_templates/</guid>
+      <guid>http://localhost:1313/posts/reporting_templates/</guid>
       <description>We have included a template mechanism for creating better and more customised reports in EMBA. Now it is possible to place plain text template files or shell scripts to the EMBA directory ./report_templates. The naming of the files is quite strict. This means for the module P11_dlink_SHRS_enc_extract.sh a reporting template with the name P11_dlink_SHRS_enc_extract-post.sh or P11_dlink_SHRS_enc_extract-post.txt is used. The ending -pre is used for details printed at the beginning of the module, -post includes details shown at the end of the module.</description>
     </item>
   </channel>
