@@ -12,7 +12,7 @@ tags:
 
 The last few weeks looked a bit more silent to the outside ... but cool things were going on in the background. Now, it is time to share all the great things we were working on ;)
 
-![image](https://github.com/user-attachments/assets/4741a0e4-9be8-4d77-8401-abc430721f4d)
+![image](https://github.com/user-attachments/assets/9801f1fc-ff8e-4ea7-a05b-5c148e523736)
 
 In the early days of the _EMBA_ firmware analysis environment one of our visions was a bit like the following:
 
